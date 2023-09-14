@@ -1,0 +1,218 @@
+h2.title-informativo-vinculos {
+  margin-bottom: 0px;
+}
+
+.categorias {
+  padding: 0px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+
+/*.categorias.vinculos .circle-item {
+  border: 1px solid #E2E8EE;
+  background-color: #fff;
+  padding: 50px 30px;
+  border-radius: 50%;
+  width: 182px;
+  min-width: 182px;
+  text-align: center;
+  margin: 15px 20px;
+  flex: 1 0 25%;
+  box-sizing: border-box;
+  max-width: 182px;
+  max-height: 182px;
+  overflow: hidden;
+}*/
+.categorias.vinculos .circle-item {
+    border: 1px solid #e2e8ee;
+    background-color: #fff;
+    padding: 0px;
+    padding-top: 17px;
+    border-radius: 50%;
+    width: 190px;
+    min-width: 182px;
+    height: 182px;
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+    max-width: 182px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.categorias.vinculos .circle-item:hover {
+  box-shadow: 0px 3px 13px #E2E8EE;
+}
+
+.nohref{
+  box-shadow: none !important; 
+}
+
+.nohref a:hover{
+  text-decoration: none !important;
+}
+
+
+.categorias.vinculos .circle-item h3 {
+  margin: 0;
+  color: #0067B1;
+  font-weight: normal;
+ /* margin-top: 28px;*/
+}
+
+.categorias.informativo .circle-item {
+  padding: 24px 30px;
+  border-radius: 50%;
+  background-color: #FAFBFD;
+  width: 230px;
+  height: 230px;
+  min-width: 230px;
+  text-align: center;
+  margin: 15px 30px;
+  flex: 1 0 25%;
+  box-sizing: border-box;
+  max-width: 230px;
+  max-height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+   position: relative;
+}
+
+
+/*.categorias.informativo .circle-item img {
+  padding: 0;
+  margin-bottom: 10px;
+  max-height: 46px;
+}*/
+.categorias.vinculos .circle-item img {
+    width: 33px;
+    height: 33px;
+    object-fit: contain;
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 18px);
+}
+.categorias.informativo .circle-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+.categorias.informativo .circle-item h3 {
+  margin: 0;
+}
+
+.categorias.informativo .circle-item p {
+  margin: 0;
+}
+
+/*
+@media screen and (max-width:768px){
+  .categorias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .categorias.vinculos .circle-item {
+    min-width: 173px;
+    margin: 5px 7px;
+    font-size: 15px;
+    max-height: 173px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 27px;
+  }
+  /*
+  .categorias.informativo .circle-item 
+    padding: 24px 3px;
+    margin: 6px 6px;
+    height: 230px;
+  }
+
+}
+  */
+
+
+@media(max-width: 768px) {
+  .categorias {
+    gap: 10px;
+    justify-content: center;
+  }
+  .categorias.informativo .circle-item {
+    /* width: 141px;
+    height: 141px;
+    min-width: 141px;*/
+    padding: 0px 12px;
+    /*margin: 12px;*/
+    justify-content: flex-start!important;
+    padding-top: 1rem!important;
+    min-width: 155px;
+    height: 155px;
+    margin: 5px;
+    width: 132px;
+    align-items: center;
+  }
+
+  .categorias.informativo .circle-item p {
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
+
+  .categorias.informativo .circle-item h2 {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    font-weight: 500 !important;
+  }
+
+  .categorias.informativo .circle-item img {
+    width: 30px !important;
+    height: 30px !important;
+  } 
+.categorias.vinculos .circle-item h3 {
+    margin-top: 2px;
+      font-size: 18px !important;
+    line-height: 18px !important;
+}
+  .categorias.informativo .circle-item img {
+       position: initial;
+    width: 30px !important;
+    height: 30px !important;
+}
+
+}
+@media(max-width:540px) {
+  .categorias {
+    justify-content: flex-start;
+    max-width: 350px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  /*.categorias.vinculos .circle-item {
+    width: 100%;
+    min-width: 100%;
+    margin: 3px auto;
+    max-width: 100%;
+    max-height: 189px;
+}*/
+  .categorias.vinculos .circle-item {
+    width: 158px;
+    min-width: 124px;
+    margin: 3px auto;
+     max-width: 159px; 
+    max-height: 156px;
+    padding-top: 30px;
+}
+}
+@media screen and (max-width:367px){
+  .categorias {
+    justify-content: center;
+    display: grid;
+  }

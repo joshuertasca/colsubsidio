@@ -1,0 +1,58 @@
+
+.tooltip-container{
+  position: relative;
+}
+.tooltip-description{
+    right: -150px;
+    top: 20px;
+    display: none;
+    width: 313px;
+    background-color: #fff;
+    padding: 14px;
+    position: absolute;
+    border: 1px solid rgb(51 51 51 / 21%);
+    border-radius: 3px;
+    font-size: 14px !important;
+    line-height: 18px;
+    color: #333333;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    z-index: 99;
+  }
+
+.tooltip-description::after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 150px;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-bottom-color: white;
+    bottom: 100%;
+    z-index: 9;
+}
+
+.tooltip-description::before{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 149px;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: rgba(51,51,51,.21);
+}
+}
+
+.closeTooltip{
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: url(https://i.imgur.com/Idy9R0n.png) no-repeat 0 0;
+    cursor: pointer;
+}

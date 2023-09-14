@@ -1,0 +1,271 @@
+.header-item a.metricas-AccesosRapidos {
+    text-decoration: none;
+}
+.header-item a.metricas-AccesosRapidos:link {
+    text-decoration: none;
+}
+#sidebar {
+    height: 100%;
+    overflow: auto;
+}
+#sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    background: #ffd000;
+    width: 30%;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.5);
+    transition: width 0.35s;
+}
+#sidebar.collapsed {
+    display: none;
+    width: 0;
+}
+#sidebar hr {
+    width: 80%;
+    border: 1px solid #5f5551;
+}
+.header.fixed .item:hover span,
+.header.fixed .item:hover a span,
+.header.fixed .item span:hover,
+.header.fixed .item a span:hover {
+    text-decoration: underline !important;
+}
+#closer {
+    float: right;
+    background: #ffd000;
+    border: 0;
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    outline: 0;
+}
+#closer:focus {
+    outline: #333 solid 2px !important;
+}
+.sidebar-content li.hs-menu-item a {
+    color: #333 !important;
+}
+a.metricas-AccesosRapidos:focus {
+    outline: #333 auto 2px !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: #333 !important;
+}
+@-moz-document url-prefix() {
+    a.metricas-AccesosRapidos:focus {
+        outline: #333 solid 2px !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: #333 !important;
+    }
+}
+#closer span:not(.texto-cerrar) {
+    content: "x";
+    width: auto;
+    height: auto;
+    text-align: center;
+    transition: all 0.35s;
+    font-size: 30px;
+    color: #0067b1;
+    font-weight: 100;
+    font-family: "Source Sans Pro", sans-serif;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+.texto-cerrar {
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 26px 50px;
+    font-weight: 400;
+}
+.texto-cerrar:after {
+    content: url(https://f.hubspotusercontent00.net/hubfs/7212050/iconos/cerrar.svg);
+    text-decoration: none !important;
+    right: 22px;
+    top: 26px;
+    font-size: 20px;
+    font-family: "Arial";
+    margin-top: 2px;
+    position: absolute;
+}
+.texto-cerrar:hover {
+    text-decoration: underline;
+}
+.sidebar-content {
+    padding: 4rem 1rem 1rem;
+}
+.sidebar-content ul {
+    list-style: none;
+}
+.sidebar-content li.hs-menu-item a {
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 32px;
+    display: inline-block !important;
+    outline: 0;
+}
+.sidebar-content li.hs-menu-item a:hover {
+    text-decoration: underline !important;
+}
+.sidebar-content li.hs-menu-item a:focus {
+    outline: #333 solid 2px !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.sidebar-content li {
+    margin-bottom: 0.5rem;
+}
+.sidebar-content .hs_cos_wrapper_type_menu ul {
+    font-weight: bold;
+}
+.sidebar-content .hs_cos_wrapper_type_menu ul li {
+    margin-bottom: 1rem;
+    font-size: 26px;
+    font-weight: 600 !important;
+}
+.sidebar-content .hs_cos_wrapper_type_simple_menu ul {
+    margin-top: 1rem;
+    list-style-type: none;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+#sidebar ul li {
+    font-size: 26px;
+}
+#sidebar ul li:first-child {
+    font-size: 20px;
+}
+#sidebar ul li:first-child a {
+    font-weight: 400;
+}
+#sidebar span[data-hs-cos-type="simple_menu"] ul li {
+    font-size: 20px;
+}
+.sidebar-content li.hs-menu-item.hs-menu-depth-1 a span {
+    background: #de1267;
+    color: #fff;
+    padding: 4px 7px;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 6px;
+    margin-left: 12px;
+    display: inline-block;
+}
+#menu-openButton span {
+    color: #333;
+}
+.header .content .header-item .item span:hover {
+    text-decoration-line: none;
+}
+.skip-menu {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 35px;
+    background: #f6f7fc;
+    z-index: 999;
+    color: #0067b1;
+    box-shadow: 0px 0px 6px 2px #333;
+    align-items: center;
+    justify-content: center;
+}
+.skip-menu.collapsed {
+    display: none;
+}
+.overlay-menu {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 4;
+}
+.active-menu {
+    display: block;
+}
+.header.fixed {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 998;
+    box-shadow: 0px 0px 6px 2px rgb(0 0 0 / 30%);
+}
+#sidebar .sidebar-content > span > div > ul > li.hs-item-has-children {
+    display: flex;
+    padding-right: 35px;
+    flex-wrap: wrap;
+    position: relative;
+    cursor: pointer;
+}
+#sidebar .sidebar-content > span > div > ul > li.hs-item-has-children a:not(.hs-menu-depth-2 a) {
+    pointer-events: none;
+}
+#sidebar .sidebar-content > span > div > ul > li > span:not(.toggle) {
+    order: 2;
+    background: #de1267;
+    color: #fff;
+    padding: 4px 7px;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 6px;
+    margin-left: 12px;
+    display: inline-block;
+}
+#sidebar .sidebar-content > span > div > ul > li.hs-item-has-children span.toggle {
+    display: block;
+    order: 2;
+    width: 35px;
+    text-align: center;
+    cursor: pointer;
+    background-image: url("https://f.hubspotusercontent00.net/hubfs/7212050/iconos/angle-arrow-down.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    height: 33.2px;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+#sidebar .sidebar-content > span > div > ul > li.hs-item-has-children span.toggle.open {
+    background-image: url("https://f.hubspotusercontent00.net/hubfs/7212050/iconos/up-arrow.png");
+}
+#sidebar .sidebar-content > span > div > ul > li.hs-item-has-children > a {
+    order: 1;
+}
+#sidebar ul.hs-menu-children-wrapper a {
+    font-size: 20px !important;
+    font-weight: 400 !important;
+}
+#sidebar .sidebar-content > span > div > ul > li.hs-item-has-children ul {
+    display: none;
+    width: 100%;
+    order: 3;
+    padding: 5px 0 10px;
+    border-bottom: solid 1px rgb(0 0 91 / 30%);
+    margin: 5px 0;
+}
+#sidebar .sidebar-content > span > div > ul > li.hs-item-has-children ul li:last-child {
+    margin-bottom: 0;
+}
+#sidebar .sidebar-content > span > div > ul > li > a:focus {
+    outline: #333 solid;
+}
+#sidebar .sidebar-content > span > div > ul > li.hs-item-has-children ul li > a:focus {
+    outline: #333 solid;
+}
+@media (max-width: 760px) {
+    #sidebar {
+        width: 70%;
+    }
+    .header {
+        margin-bottom: 0px !important;
+    }
+}

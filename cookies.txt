@@ -1,0 +1,13 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.colsubsidio.com	TRUE	/	FALSE	1999999999	visid_incap_1091798	VX5syS2pRf6eEAyhOoIDze0fA2UAAAAAQUIPAAAAAADIuemrOEXYIo4YEMpBI6A3
+.colsubsidio.com	TRUE	/	FALSE	1999999999	incap_ses_9129_1091798	Pv/BEcXv1jcFtnf9qLmwfu0fA2UAAAAAWf8nLDrFZmOdZEV0q7KyHQ==
+www.colsubsidio.com	TRUE	/	FALSE	1999999999	PHPSESSID	7rbdhejq51o5hrf29hgbqt9gpm
+.laboratorios.colsubsidio.com	TRUE	/	FALSE	1999999999	__cf_bm	QEQiW8lxjM6OmuosSRqAnnGvzPdSjyx2cwgzmYuNqPI-1694703892-0-AVXtOlMWhei2ZHAjdAwPqRKn5ka8dY1ixh9xS+QVOyng0Aj88/hI+v7AYshXuZGaucgLUzNQBSOxRcjzfsBkRsk=
+.laboratorios.colsubsidio.com	TRUE	/	FALSE	1999999999	__cfruid	242a5ec921358cb79c35b551c4a82b84e219045a-1694703892
+laboratorios.colsubsidio.com	TRUE	/	FALSE	1999999999	SameSite	None
+www.colsubsidio.com	TRUE	/	FALSE	1999999999	ASP.NET_SessionId	tiaoeaj2ebblitluhppfp2xp
+.www.colsubsidio.com	TRUE	/	FALSE	1999999999	__cf_bm	vCnf5SfBkCH1WWNbyFMtocGCySNWIZXnCAs1JsIdXR0-1694704367-0-ARIvgIP6ZnHMt+iAK24Vp0q54QFudCCNGXndGQzBYve+jF45G2G/8LvHlsK0qQY3J4J+98qLc+KKslfA5VviwjQ=
+.www.colsubsidio.com	TRUE	/	FALSE	1999999999	__cfruid	ba6c791f98c794f32e56ea59e6bcb69e09d199a0-1694704367
+www.colsubsidio.com	TRUE	/	FALSE	1999999999	SameSite	None
+

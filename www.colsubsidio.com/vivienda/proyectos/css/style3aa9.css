@@ -1,0 +1,3060 @@
+ 
+ @font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://www.colsubsidio.com/vivienda/proyectos/css/fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+	src: local('Material Icons'),
+	  local('fonts/MaterialIcons-Regular.ttf'),
+	  url(https://www.colsubsidio.com/vivienda/proyectos/css/fonts/MaterialIcons-Regular.woff) format('woff'),
+	  url(https://www.colsubsidio.com/vivienda/proyectos/css/fonts/MaterialIcons-Regular.ttf) format('truetype');
+  }
+  
+  .material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;  /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+  
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+  
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+  
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+  }
+  
+  body{
+	  font-family: 'Source Sans Pro', sans-serif !important;
+	  font-weight: 300;
+	  /* font-size: 14px; */
+  }
+  ul, li{
+	  margin: 0px;
+	  padding: 0px;
+  }
+  
+  .header-fixed {
+	  background: #011f5b;
+	  position: relative;
+	  z-index: 9994;
+	  width: 100%;
+  }
+  .logo-colsubsidio {
+	  width: 210px;
+  }
+  
+  h1{
+	  color: #001f5b;
+	  font-size: 1.5625rem;
+  }
+
+  p {
+	  color: rgb(51, 51, 51);
+  }
+
+  :focus {
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 3px #333;
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px #333;
+	}
+
+	.btnvideollamada:focus {
+		outline: 0;
+		-webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 3px #333 !important;
+		box-shadow: 0 0 0 1px #fff, 0 0 0 3px #333 !important;
+	}
+  
+  .text-filtros {
+	  margin: 15px;
+	  padding-left: 7px;
+  }
+  
+  .vivienda-filtros-pro a {
+	/* font-weight: 400 !important;
+	font-size: 0.75rem !important;
+	line-height: 18px !important;
+	color: rgb(0, 103, 177) !important; */
+	text-decoration: none !important;
+   }
+
+   .vivienda-filtros-pro a:hover {
+	color: rgb(0, 103, 177);
+	text-decoration: underline !important;
+   }
+
+   .form-control.is-invalid, .was-validated .form-control:invalid {
+		background-size: 0;
+	}
+  
+  a:hover{
+	  color:rgb(0, 103, 177);
+  }
+  .container{
+	  max-width: 1240px;
+	  margin-bottom: 20px;
+	  margin-top: 20px;
+  }
+  .nombre_seccion{
+	  padding: 40px 0px 10px 0px;
+  }
+  /*FILTROS home*/
+  
+  @media screen and (max-width: 720px){
+	  .logo-colsubsidio{
+	  width: 170px !important;
+	  margin-left: 25%;
+	  }
+  }
+
+  .ui-widget-content {
+	background-image: url(https://www.colsubsidio.com/vivienda/proyectos/images/barra1.png) !important;
+  }
+  
+  .filtros_superior{
+	  background-color: transparent;
+	  padding: 20px 15px 20px 15px;
+	  width: 100%;
+	  max-width: 100%;
+	  margin-bottom: 30px;
+	  margin-top: -54px;
+	  position: relative;
+	  z-index: 1;
+  }
+  .filtros_superior select, .filtros_superior input{
+	  background-color: transparent;
+	  color: rgb(0, 103, 177);
+	  font-size: 14px;
+	  border-radius: 5px;
+	  padding: 10px;
+	  border: 1px solid #315dbf;
+  }
+  
+  .filtros_superior input{
+	  height: 38px;
+  }
+  .buscar{
+	  background-image: url(https://www.colsubsidio.com/vivienda/proyectos/imagenes-vivienda/lupa-vivienda.png);
+	  background-repeat: no-repeat;
+	  background-position: 95% 58%;
+	  background-size: 18px;
+  }
+  
+  .buscar:before {
+	  font-family: 'osfonts';
+	  font-style: normal;
+	  font-weight: normal;
+	  font-variant: normal;
+	  text-transform: none;
+	  line-height: 1;
+	  -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+	  content: "\f002";
+	  top: 50%;
+	  -webkit-transform: translateY(-53%);
+	  -moz-transform: translateY(-53%);
+	  -ms-transform: translateY(-53%);
+	  -o-transform: translateY(-53%);
+	  transform: translateY(-53%);
+	  right: 26px;
+	  position: absolute;
+	  color: #e8e8e8;
+	  font-size: 15px;
+	  background-image: url(https://www.colsubsidio.com/vivienda/proyectos/images/paralell.png);
+	  background-repeat: no-repeat;
+	  background-position: right 6px;
+  }
+  
+  .buscar::placeholder { 
+	color:rgb(0, 103, 177);
+	opacity: 1; 
+  }
+  
+  .buscar:-ms-input-placeholder { 
+	color:rgb(0, 103, 177);
+  }
+  
+  .buscar::-ms-input-placeholder { 
+	color:rgb(0, 103, 177);
+  }
+  
+  .espacio_interna{
+  padding-top: 45px;
+  }
+  .slidecontainer {
+	width: 100%;
+  }
+  .slider {
+	-webkit-appearance: none; 
+	appearance: none;
+	width: 100%;
+	height: 25px;
+	outline: none; 
+	opacity: 0.7; 
+	-webkit-transition: .2s; 
+	transition: opacity .2s;
+	  background-image: url(https://www.colsubsidio.com/vivienda/proyectos/images/barra.png);
+	  background-repeat: repeat-x;
+	  background-position: center center;
+  }
+  
+  /*barras laterales filtros*/
+  
+  .ui-widget-header {
+	  border: 0px solid rgb(51, 51, 51) !important;
+	  background: url(https://www.colsubsidio.com/vivienda/proyectos/images/barra2.png) 50% 50% repeat-x !important;
+	  color: #ffffff;
+	  font-weight: bold !important;
+  }
+
+  .ui-widget-content {
+    border: none !important;
+    background: none !important;
+  }
+
+  #slider-precio {
+	width: 90%;
+	margin: auto;
+  }
+
+  #slider-area {
+	width: 90%;
+	margin: auto;
+  }
+
+  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	border-radius: 30px !important;
+    background: hsl(0, 0%, 100%) !important;
+    box-shadow: -1px 1px 2px rgb(67 70 74 / 0%), -2px 2px 5px rgb(67 86 100 / 12%);
+  }
+  
+  .ui-slider .ui-slider-range {
+	  background-position: center;
+  }
+  
+  .ui-widget-content {
+	  border: transparent;
+	  background: transparent;
+  }
+  
+  .ui-slider-horizontal .ui-slider-range {
+	  top: -2px;
+  }
+  
+  /*fin barras laterales filtros*/
+  
+  .slider:hover {
+	opacity: 1; 
+  }
+  .slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px; 
+	background:rgb(51, 51, 51);
+	cursor: pointer;
+	  border-radius: 20px;
+	  border: 4px solid #ccd1de;
+  }
+  
+  .slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	  background:rgb(51, 51, 51);
+	cursor: pointer;
+	  border-radius: 20px;
+	  border: 4px solid #ccd1de;
+  }
+  
+  .boxdescrirender {
+	  background-color: rgba(0, 0, 0, 0.70);
+	  border-radius: 15px;
+	  padding: 20px;
+	  position: absolute;
+	  right: 10px;
+	  bottom: 10px;
+	  width: 340px;
+  }
+  
+  .boxdescrip {
+	  color: #fff !important;
+	  font-size: 14px !important;
+	  font-weight: 400;
+	  margin-bottom: 15px;
+	  text-align: left;
+  }
+  
+  .boxdescrirender h4{
+	  color: #FFB100;
+	  font-size: 18px;
+	  font-weight: 700;
+	  margin-top: -15px;
+	  margin-bottom: 10px;
+  }
+
+  .boxdescrirender h2{
+	color: #FFB100;
+	font-size: 18px !important;
+	font-weight: 700 !important;
+	margin-top: -15px !important;
+	margin-bottom: 10px !important;
+}
+  
+  .lineboxdescri {
+	  background-color: #777777;
+	  height: 1px;
+	  margin-bottom: 10px;
+  }
+
+  .dat-persn .form-check-input {
+		width: 30px !important;
+		height: 30px !important;
+		border: 1px solid hsl(205, 100%, 35%) !important;
+		box-sizing: border-box;
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px !important;
+		-o-border-radius: 6px;
+		border-radius: 6px !important;
+		margin-left: 0;
+	}
+
+	/* .dat-persn .form-check-input[type=checkbox] {
+		background: hsl(205, 100%, 35%) url(../images/check.svg) no-repeat center;
+	} */
+
+	.dat-persn .form-check-input:checked[type=checkbox] {
+		background-image: url(https://www.colsubsidio.com/vivienda/proyectos/images/check.png) !important;
+		background-size: 16.25px !important;
+		background-repeat: no-repeat !important;
+		background-position: center !important;
+		background-size: 16.25px !important;
+		background-color: hsl(205, 100%, 35%) !important;
+	}
+
+	#div-formulario-paso1 .dat-persn .form-control {
+		background-image: url(https://www.colsubsidio.com/vivienda/proyectos/images/check.png);
+		background-color: hsl(205, 100%, 35%);
+		background-size: 16.25px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+  @media screen and (max-width: 768px){
+	  .boxdescrirender {
+	  position: relative;
+	  top: 0;
+	  right: 0;
+	  margin-top: 20px;
+	  width: 100%;
+	  }
+	  .espacio_interna{
+	  padding-top: 30px !important;	
+	  }
+  }
+  
+  .desde_m{
+	  float: left;
+	  width: 80px;
+	  text-align: left;
+	  font-size: 10px;
+	  color:rgb(51, 51, 51);
+	  font-weight: 500;
+  }
+  .hasta_m{
+	  float: right;
+	  width: 80px;
+	  text-align: right;
+	  font-size: 10px;
+	  color:rgb(51, 51, 51);
+	  font-weight: 500;
+  }
+  
+  
+  
+  .barra_titulo a {
+	  color:#808080;
+	  font-size:16px;
+  }
+  .cont-title-sec{
+	  position: relative;
+  }
+  
+  .title-sect {
+	  display: inline-block;
+	  position: relative;
+	  padding-bottom: 4px;
+	  color:rgb(51, 51, 51);
+	  font-size:26px;
+	  font-weight:600;
+  }
+  
+  /* .title-sect:after {
+	  content: "";
+	  position: absolute;
+	  width: 55%;
+	  height: 3px;
+	  background-color: rgb(51, 51, 51);
+	  left: 0;
+	  bottom: 0
+  } */
+  
+  .u-btn--yellow {
+	  display: inline;
+	  background-color: #ffce00;
+	  color: rgb(0, 103, 177);
+  }
+  
+  .u-btn--blue {
+	/*display: inline;*/
+	background-color: rgb(0, 103, 177);
+    color: #fff !important;
+    border-radius: 20px !important;
+    font-size: 1rem !important;
+  }
+  
+  .u-btn i{
+	  vertical-align: middle;
+	  font-size: 18px;
+  }
+  .u-btn {
+	  font-size: .85rem;
+	  padding: 10px 25px;
+	  font-weight: 600;
+	  border-radius: 6px;
+	  transition: all .3s linear;
+	  cursor: pointer;
+	  position: relative;
+	  display: block;
+	  text-align: center;
+  }
+  
+  .u-btn .material-icons{
+	  font-size: 18px !important;
+  
+  }
+  .u-btn--yellow:hover {
+	  background-color: #001f5b;
+	  color: #fff;
+  }
+  
+  .u-btn--blue:hover {
+	color: #fff !important;
+    background-color: #00365c !important;
+  }
+  
+  /* a:active, a:focus, a:hover {
+	  outline: transparent;
+  } */
+  .u-btn--one {
+	  padding: 8px 10px;
+	  margin-bottom: 6px;
+	  border-radius: 0px;
+  }
+  
+  .u-btn--three {
+	  padding: 9px 30px 9px 20px;
+	  display: inline;
+	  float: right;
+	  margin-right: 20px;
+	  margin-top: -20px;
+  }
+  
+  /* @media screen and (max-width: 720px) {
+	.u-btn--one {
+	  }	
+  } */
+  
+  /*miga de pan*/
+  
+  .breadcrumb {
+	  padding: 0;
+	  margin-bottom: 2rem;
+	  background-color: transparent;
+	  font-size: 12px;
+	  color: #333;
+	  font-weight: 400;
+  }
+  
+  .breadcrumb-item+.breadcrumb-item::before {
+	  display: inline-block;
+	  padding-right: .5rem;
+	  padding-left: .5rem;
+	  color: #cacaca;
+	  content: ">";
+  }
+  /* fin miga de pan*/
+  
+  .secpro-1 p {
+	  color:rgb(51, 51, 51);
+	  font-size:14px;
+	  margin-top: 5px;
+  }
+  
+  .secpro-2{
+	  -webkit-border-radius: 15px;
+	  -moz-border-radius: 15px;
+	  border-radius: 15px;
+	  -webkit-box-shadow: -1px 2px 13px 0px rgba(0,0,0,0.35);
+	  -moz-box-shadow: -1px 2px 13px 0px rgba(0,0,0,0.35);
+	  box-shadow: -1px 2px 13px 0px
+	  rgba(0,0,0,0.35);
+	  background-color: #FFFFFF;
+	  padding: 30px 30px 60px 20px;
+	  width: 100%;
+	  max-width: 100%;
+  }
+  
+  .secpro-2 select{
+	  color:rgb(0, 103, 177);
+	  border: none;
+  }
+  
+  .secpro-3 {
+	  color:rgb(0, 103, 177);
+	  font-size:15px;
+  }
+  
+  .secpro-4 {
+	  -webkit-border-radius: 15px;
+	  -moz-border-radius: 15px;
+	  border-radius: 15px;
+	  -webkit-box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  -moz-box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  background-color: #FFFFFF;
+	  padding: 20px 20px 20px 20px;
+	  margin-top: -6px;
+  }
+  
+  .secpro-4 h4{
+	  color:rgb(51, 51, 51);
+	  font-size:18px;
+	  font-weight: 600;
+  }
+  
+  .tex-icons-fltrs {
+	  color:rgb(51, 51, 51);
+	  font-size:14px;
+	  font-weight:300;
+	  text-align: center;
+	  
+  }
+  
+  .secpro-5 {
+	  color:rgb(0, 103, 177);
+	  font-size:22px;
+	  font-weight:900;
+	  margin-left: 290px;
+	  margin-bottom: 30px;
+  }
+  
+  .sec-ubc{
+	  margin-top: 15px;
+	  margin-bottom: 20px;
+  }	
+	  
+  .sec-ubc label{
+	  color:rgb(51, 51, 51);  
+	  margin-top: 2px;
+  }
+  
+  .sec-ubc input{
+	  border-color: #ffce00;
+  }
+  
+  .secpro-6{
+	  -webkit-border-radius: 15px;
+	  -moz-border-radius: 15px;
+	  border-radius: 15px;
+	  -webkit-box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  -moz-box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  background-color: #FFFFFF;
+	  padding: 30px 30px 20px 20px;
+	  font-weight: 300;
+	  transition: all .3s linear;
+  }
+  
+  .secpro-6 h4{
+	font-family: "Source Sans Pro", sans-serif !important;
+	  color:rgb(51, 51, 51);
+	  font-size:14px;
+	  font-weight: 600;
+	  margin-top: 5px;
+	  margin-bottom: 20px !important;
+  }
+  
+  .texprecmin{
+	margin-top: 15px !important;
+	font-size: 0.75rem !important;
+	margin-left: 5px;
+	margin-bottom: 15px;
+  }
+  
+  .secpro-6 p{
+	  color:rgb(51, 51, 51);
+	  margin-top: 5px;
+  }
+  .secpro-6 label{
+	  font-weight: 300;
+	  font-family: "Source Sans Pro", sans-serif !important;
+  }
+  
+  .pro-col{
+	  -webkit-border-radius: 15px;
+	  -moz-border-radius: 15px;
+	  border-radius: 15px;
+	  border: #c8c8c8 1px solid;
+	  padding: 20px 0px 0px 0px;
+	  margin-bottom: 20px;
+	  cursor: pointer;
+	  overflow: hidden;
+	  transition: all .3s linear;
+  }
+  .pro-col:hover {
+	  -webkit-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.1);
+	  box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.1);
+	  -webkit-transform: translateY(-8px);
+	  -moz-transform: translateY(-8px);
+	  -ms-transform: translateY(-8px);
+	  -o-transform: translateY(-8px);
+	  transform: translateY(-8px);
+	  transition: all .3s linear;
+  }
+  .pro-col .img-fluid{
+	  transition: all .8s linear;
+  }
+  .pro-col:hover .img-fluid{
+	  transform: scale(1.05);
+	  transition: all .8s linear;
+  }
+  
+  .pro-col h4{
+	  color:rgb(51, 51, 51);
+	  font-size:14px;
+	  font-weight: 600;
+	  padding-left: 15px;
+  }
+  
+  .pro-col h4:hover{
+	  color:rgb(0, 103, 177);
+  }
+  
+  .pro-col p{
+	color: rgb(51, 51, 51);
+    font-weight: 300 !important;
+    padding-left: 15px;
+    margin-top: -5px;
+    font-size: 14px !important;
+  }
+  
+  
+  
+  .pro-col-des-1{
+	  background-color:#eeeeee;
+	  margin-top: 5px;
+	  margin-right: -18px;
+  }
+  
+  .pro-col-des-1 p{
+	  position: relative;
+	  top: 6px;
+  
+  }
+  
+  .pro-col-des-1 h4{
+	 position: relative;
+	 top: -8px;
+  
+  }
+  
+  .pro-col-des-2{
+	  margin-top: 5px;
+	  background: #FFFFFF;
+	  margin-left: -20px;
+  }
+  
+  .pro-col-des-2 p{
+	  position: relative;
+	  top: 6px;
+  
+  }
+  
+  .pro-col-des-2 h4{
+	 position: relative;
+	 top: -8px;
+  
+  }
+  
+  .pro-col-des-3{
+	  border-top:1px solid #c8c8c8;
+	  border-right:0px solid #c8c8c8;
+	  border-bottom:1px solid #c8c8c8;
+	  border-left:0px solid #c8c8c8;
+	  margin-top: -8px;
+  }
+  
+  .pro-col-des-3 p{
+	  color: #001f5b;
+	  position: relative;
+	  top: 9px;
+	  left: 20px;
+	  background-image: url(https://www.colsubsidio.com/vivienda/proyectos/images/ico-proyecto.png);
+	  background-repeat:no-repeat;
+	  padding-left: 20px;
+  }
+  
+  .pro-col-des-4 p{
+	  color: #001f5b;
+	  position: relative;
+	  top: 9px;
+	  left: 20px;
+	  background-image: url(https://www.colsubsidio.com/vivienda/proyectos/images/ico-aplica.png);
+	  background-repeat:no-repeat;
+	  padding-left: 20px;
+	  
+  }
+  
+  .secpro-7{
+	  -webkit-border-radius: 15px;
+	  -moz-border-radius: 15px;
+	  border-radius: 15px;
+	  -webkit-box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  -moz-box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  background-color: #FFFFFF;
+	  padding: 30px 15px;
+	  margin-top: 0;
+  }
+  
+  @media screen and (max-width: 768px){
+	  .secpro-7{
+		  margin-top: 0px;
+	  }
+  }
+  
+  /*PAG INTERNA*/
+  
+  .mig_pan-1 {
+	  margin-top: 50px;
+  }
+  
+  .sec-pro-1{
+	  -webkit-border-radius: 15px;
+	  -moz-border-radius: 15px;
+	  border-radius: 15px;
+	  -webkit-box-shadow: -4px 4px 13px -4px rgba(0,0,0,0.75);
+	  -moz-box-shadow: -4px 4px 13px -4px rgba(0,0,0,0.75);
+	  box-shadow: -4px 4px 13px -4px rgba(0,0,0,0.75);
+	  background-color: #FFFFFF;
+	  padding: 15px 15px 30px 15px;
+	  width: 100%;
+	  max-width: 100%;
+	  margin-bottom: 30px;
+	  margin-top: 30px;
+  }
+  
+  .sec-pro-1 select{
+	  color:rgb(0, 103, 177);
+	  border: none;
+  }
+  
+  
+  .form-group {
+	  margin-bottom: 0rem;
+  }
+  
+  .sec-pro-14-form{
+	width: 100%;
+    max-width: 100%;
+	background-color: rgb(246, 247, 252);
+	border: 1px solid rgb(226, 232, 238);
+	border-radius: 0px 0px 6px 6px;
+	padding: 0.938rem;
+    
+  }
+  
+  .sec-pro-14-form h4{
+	  color:rgb(51, 51, 51);
+	  font-size:1rem;
+	  font-weight:700;
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	  text-align: left;
+  }
+  
+  .sec-pro-14-form h5{
+	  color: #333;
+	  font-size: 14px;
+	  font-weight: 600;
+	  margin-top: -13px;
+	  padding-bottom: 0px;
+	  text-align: center;
+  
+  }
+  .sec-pro-14-form label{
+		font-weight: 400;
+		font-size: 0.875rem;
+		line-height: 18px;
+		color: rgb(51, 51, 51);
+		margin-top: 10px;
+		margin-bottom: 10px;
+  }
+  
+  .sec-pro-14-form input{
+	  border: 0;
+	  outline: 0;
+	  border-bottom: 1px solid rgb(0, 103, 177);
+	  margin-top: -5px;
+	  border-radius: 0;
+  }
+   
+  
+  .dat-persn {
+	  margin-top: 10px;
+  }
+  
+  .dat-persn input{
+	position: relative;
+    top: 13px;
+    left: 3px;
+    width: 27px !important;
+    height: 27px !important;
+    border: 1px solid rgb(226, 232, 238) !important;
+    border-radius: 3px !important;
+  }
+  
+  .dat-persn label{
+	font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 18px;
+    color: rgb(51, 51, 51);
+    position: relative;
+    top: -1.2rem;
+    margin-left: 2.3rem;
+	margin-bottom: -12px;
+  }
+  
+  .dat-persn a{
+	  font-size: 12px !important;
+	  color: rgb(51, 51, 51);
+	  font-weight: 600;
+	  /* margin-left: 5px; */
+	  text-decoration: underline;
+	  line-height: 6px;
+  }
+  #div-botones-iniciales{
+	  margin-top: 10px;
+	  
+  }
+  .dat-persn a:hover{
+	  color:#011f5b;
+  }
+  
+  .custom-control-input {
+	  z-index: 0;
+	  opacity: 1;
+  }
+
+  /* #div-formulario-paso1 .form-control {
+    background: rgb(255, 255, 255) !important;
+    border: 1px solid rgb(226, 232, 238) !important;
+    border-radius: 5px !important;
+} */
+  
+  .form-control {
+	  padding: .1rem .1rem;
+  }
+  
+  .mdl-selectfield label {
+	  position: relative;
+	  top: 0;
+	  left: 0;
+	  font-size: .70rem;
+	  font-weight: 600;
+	  font-style: normal;
+	  font-variant: normal;
+	  color: #0060BF;
+  }
+  
+  .mdl-selectfield select {
+	  width: 100%;
+	  height: 44px;
+	  -webkit-appearance: none;
+	  -moz-appearance: none;
+	  appearance: none;
+	  background-color: white;
+  }
+  
+  .mdl-selectfield select {
+	  font-size: 0.7rem;
+	  font-weight: 400;
+	  font-style: normal;
+	  font-variant: normal;
+	  border: none;
+	  border-bottom-color: currentcolor;
+	  border-bottom-style: none;
+	  border-bottom-width: medium;
+	  border-bottom: 2px solid #657899;
+	  padding: 20px 0px 0px 0px;
+	  color: #001f5b;
+  }
+  
+  .sec-pro-2{
+	  width: 100%;
+	  margin-top: 20px;
+  }
+  
+  .sec-pro-2 h2 {
+	  color:rgb(51, 51, 51);
+	  font-size:28px;
+	  font-weight:900;
+	  margin-top: 5px;
+  }
+  
+  
+  /*3 SECCION*/
+  .texpar p{
+	  color: rgb(51, 51, 51);
+	  font-weight: 400;
+	  padding-right: 10px;
+  }
+  
+  .sec-pro-3 .carousel-inner{
+	  -webkit-box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  -moz-box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  -webkit-border-radius: 15px;
+	  -moz-border-radius: 15px;
+	  border-radius: 15px;
+  }
+  
+  .sec-pro-3 p{
+	  font-size: 14px;
+	  font-weight: 400;
+  }
+  
+  .sec-pro-4 h4{
+	  font-size: 14px;
+	  font-weight: 700;
+	  color:rgb(51, 51, 51);
+	  margin-top: 40px;
+	  margin-bottom: 15px;
+  }
+  
+  .sec-pro-4 .img-fluid{
+	  transition: all .3s linear;
+  }
+  
+  .sec-pro-4 .img-fluid:hover{
+	  transform: scale(1.08);
+	  transition: all .3s linear;
+  }
+  
+  .texto-encima{
+	  position: absolute;
+	  top: 10px;
+	  left: 10px;
+  }
+  
+  .sec-pro-4{
+	  border-top:0px solid rgb(51, 51, 51);
+	  border-right:0px solid rgb(51, 51, 51);
+	  border-bottom:1px solid rgb(51, 51, 51);
+	  border-left:0px solid rgb(51, 51, 51);
+	  padding-bottom: 10px;
+  }
+  
+  .apt-sec {
+	  border-top:0px solid #adadad;
+	  border-right:1px solid #adadad;
+	  border-bottom:0px solid #adadad;
+	  border-left:0px solid #adadad;
+	  margin-top: 40px;
+	  
+  }
+  
+  .apt-sec h4{
+	  color:rgb(0, 103, 177);
+	  font-size: 14px;
+	  color:rgb(51, 51, 51);
+	  font-weight:900;
+  }
+  
+  .apt-sec p{
+	  color:rgb(0, 103, 177);
+	  font-size: 14px;
+	  color:rgb(51, 51, 51);
+	  padding-top: 20px;
+  }
+  
+  .ico-sec-1 img{
+	  margin-top: 40px;
+	  
+  }
+  
+  .ico-sec-1 p{
+	  color: rgb(51, 51, 51);
+  }
+  
+  
+  .sec-pro-5{
+	  border-top:0px solid #adadad;
+	  border-right:0px solid #adadad;
+	  border-bottom:1px solid rgb(51, 51, 51);
+	  border-left:0px solid #adadad;
+	  padding-bottom: 10px;
+  }
+  
+  .sec-pro-5 h4{
+	  font-size: 14px;
+	  font-weight: 700;
+	  color:rgb(51, 51, 51);
+	  padding-top: 40px;
+	  margin-bottom: 15px;
+  }
+  
+  .sec-pro-5 .img-fluid{
+	  transition: all .5s linear;
+  }
+  
+  .sec-pro-5 .img-fluid:hover{
+	  transform: scale(1.08);
+	  transition: all .5s linear;
+  }
+  
+  .sec-pro-6{
+	  padding-top: 20px;
+  }
+  
+  .sec-pro-6 h4{
+	  color:rgb(51, 51, 51);
+	  font-size: 18px;
+	  font-weight: 700;
+	  margin-top: 30px;
+}
+  
+  .sec-pro-6 img{
+	  margin-top: -45px;
+  }
+  
+  .sec-pro-7{
+	  -webkit-border-radius: 15px;
+	  -moz-border-radius: 15px;
+	  border-radius: 15px;
+	  -webkit-box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  -moz-box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  background-color: #FFFFFF;
+	  width: 100%;
+	  max-width: 100%;
+	  margin-bottom: 30px;
+	  margin-top: 30px;
+  }
+  
+  .padnch {
+	min-height: 100%;
+	  padding: 20px;
+	  position: relative;
+	  right: 20px;
+  }
+  
+  .list-group{
+	  padding: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+	.list-group{
+	  padding: 10px;
+	  text-align: center;
+	  }
+  }
+  
+  .plan-apart-2 a{
+	  color:rgb(51, 51, 51);
+	  font-size: 14px;
+	  font-weight: 400;
+	  border: none;
+	  text-decoration: none;
+  }
+  
+  @media screen and (max-width: 768px){
+	  .plan-apart-2 img{
+		  width: 100%;
+		  padding-left: 40px;
+	  }
+  }
+  
+  .sec-pro-8{
+	  -webkit-border-top-left-radius: 15px;
+	  -webkit-border-bottom-left-radius: 15px;
+	  -moz-border-radius-topleft: 15px;
+	  -moz-border-radius-bottomleft: 15px;
+	  border-top-left-radius: 15px;
+	  border-bottom-left-radius: 15px;
+	  -webkit-box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  -moz-box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  margin-top: 30px;
+	  margin-bottom: 30px;
+  }
+  
+  .plan-apart-3{
+	  border-radius: 15px 0px 0px 15px;
+	  -moz-border-radius: 15px 0px 0px 15px;
+	  -webkit-border-radius: 15px 0px 0px 15px;
+	  border: 0px solid #000000;
+	  background-color: #FFFFFF;
+	  padding-bottom: 15px;
+	  margin-right: -30;
+	  height: 100%;
+  }
+  
+  @media screen and (max-width: 720px) {
+	.plan-apart-3{
+	  border-radius: 15px 15px 0px 0px;
+	  -moz-border-radius: 15px 15px 0px 0px;
+	  -webkit-border-radius: 15px 15px 0px 0px;
+	  border: 0px solid #000000;
+	  margin-right: 0;
+	  }
+  }
+  
+  .plan-apart-3 a{
+	  color:rgb(51, 51, 51);
+	  font-size: 14px;
+	  font-weight: 400;
+	  border: none;
+  }
+  
+  .vid-apart iframe{
+	  
+	  max-width: 100%;
+	  border: none;
+	  width: 100%;
+	  overflow: hidden;
+	  position: relative;
+	  height: 378px;
+	  
+  }
+	  
+  .sec-pro-9{
+	  -webkit-border-radius: 15px;
+	  -moz-border-radius: 15px;
+	  border-radius: 15px;
+	  -webkit-box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  -moz-box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  box-shadow: -5px 5px 10px -10px rgba(0,0,0,0.75);
+	  background-color: #FAFBFD;
+	  margin-top: 30px;
+  }
+  
+  
+  .sec-pro-9 img{
+	  -webkit-border-top-left-radius: 25px;
+	  -webkit-border-top-right-radius: 25px;
+	  -moz-border-radius-topleft: 25px;
+	  -moz-border-radius-topright: 25px;
+	  border-top-left-radius: 25px;
+	  border-top-right-radius: 25px;
+	  width:100%;
+  }
+  
+  .sec-pro-9 h4{
+	  color:rgb(51, 51, 51);
+	  font-size: 16px;
+	  font-weight: 700;
+	  padding-left: 30px;
+	  padding-top: 20px;
+  }
+  
+  
+  .sec-pro-9 p{
+	  color:rgb(51, 51, 51);
+	  font-size: 12px;
+	  font-weight: 400;
+	  padding-left: 30px;
+	  line-height: 1.8;
+  }
+  
+  #lbl_direccion {
+	  color: rgb(51, 51, 51);
+	  font-size: 12px;
+	  font-weight: 400;
+	  padding-left: 30px;
+	  margin-top: -20px;
+  }
+  
+  #lbl_telefonos {
+	  color: rgb(51, 51, 51);
+	  font-size: 12px;
+	  font-weight: 400;
+	  padding-left: 30px;
+	  margin-top: -20px;
+  }
+  
+  #lbl_email_sala_de_ventas {
+	  color: rgb(51, 51, 51);
+	  font-size: 12px;
+	  font-weight: 400;
+	  padding-left: 30px;
+	  margin-top: -20px;
+  }
+  
+  #lbl_horarios {
+	  color: rgb(51, 51, 51);
+	  font-size: 12px;
+	  font-weight: 400;
+	  padding-left: 10px;
+	  margin-right: 30px;
+  }
+  
+  
+  
+  .sec-9{
+	height: auto;
+    min-height: 100%;
+	background-color: rgb(255, 255, 255);
+	padding-bottom: 1rem;
+  }
+
+  .sec-9-2 {
+	padding-bottom: 1rem;
+    min-height: 100%;
+    height: auto;
+  }
+  
+  .sec-pro-10 p{
+	  font-size: 14px;
+	  font-weight: 400;
+	  
+  }
+  
+  .sec-pro-12 h4{
+	  color:rgb(0, 103, 177);
+	  font-size: 22px;
+	  font-weight: 700;
+  }
+  
+  .sec-pro-13{
+	  border:1px solid #315dbf;
+	  border-radius:15px;
+	  padding-bottom: 10px;
+	  margin-top: 15px;
+  }
+  
+  .simpro1 h4{
+	  color: rgb(0, 103, 177);
+	  font-size: 12px;
+	  font-weight: 600;
+	  margin-top: 20px;
+	  padding-left: 35px;
+  }
+  
+  .simpro1 img{
+	  margin-top: -25px;
+	  margin-left: 8px;
+  }
+  
+  .solicitud h4{
+	  color:rgb(0, 103, 177);
+	  font-weight: 600;
+	  margin-top: 20px;
+	  padding-left: 35px;
+  }
+  
+  .solicitud img{
+	  margin-top: -25px;
+	  margin-left: 8px;
+  }
+  
+  
+  
+  @media screen and (max-width: 720px) {
+	  .dat-persn input{
+		left: 4px;
+	  top: 6px;
+	  }
+  }
+  
+  
+  .footer {
+	  color: #737373;
+	  font-size:14px;
+  }
+  
+  .cerrar {
+	  width: 22px;
+	  height: 23px;
+	  background-color: #001f5b;
+	  color: #FFFFFF;
+	  text-align: center;
+	  border-radius: 50%;
+	  float: right;
+	  margin: 0px 0px 0px 0px;
+	  cursor: pointer;
+	  font-size: 15px;
+	  position: relative;
+	  top: -58px;
+  }
+  .filtros_movil{
+		  background-color: #ffce00;
+		  color: #001f5b;
+		  padding: 10px 20px 10px 20px;
+		  font-weight: 500;
+		  border-radius: 6px;
+		  transition: background-color .3s linear;
+		  width: 100%;
+		  cursor: pointer;
+		  display: block;
+		  text-align: center;
+		  border: 0px;
+  }
+  .paralell{
+		  padding: 6px 25px 6px 10px;
+		  background-image: url(https://www.colsubsidio.com/vivienda/proyectos/imagenes-vivienda/lupa-vivienda.png);
+		  background-repeat: no-repeat;
+		  text-align: left;
+		  background-position: 80px 8px;
+		  background-size: 15px;
+		  
+  }
+  .cont_filtros_movil button{
+	  font-size: 14px;
+  }
+  .apto_cuenta_con .img-fluid{
+	  width: 45px !important;
+	  margin: auto;
+	  -webkit-filter: grayscale(1);
+	  filter: grayscale(1);
+  }
+  .apto_cuenta_con p{
+	text-align: center;
+    font-size: 14px !important;
+    color: #333;
+    line-height: 16px !important;
+    margin-top: 12px;
+  }
+  .proy_cuenta_con .img-fluid{
+	  width: 45px !important;
+	  margin: auto;
+	  -webkit-filter: grayscale(1);
+	  filter: grayscale(1);
+  }
+  .proy_cuenta_con p{
+	text-align: center;
+    font-size: 14px !important;
+    color: #333;
+    line-height: 16px !important;
+    margin-top: 12px;
+  }
+  @media screen and (max-width:768px) {
+	  .d-sm-block{
+		  display: block !important;
+	  }
+	  .cont_filtros_movil row{
+		  background-color: #FFF;
+	  }
+	  .filtros_movil{
+		  background-color: #ffce00;
+		  color: #001f5b;
+		  padding: 6px 20px 6px 20px;
+		  font-weight: 500;
+		  border-radius: 6px;
+		  transition: background-color .3s linear;
+		  width: 100%;
+		  cursor: pointer;
+		  display: block;
+		  text-align: center;
+		  border: 0px;
+	  }
+	  .paralell{
+		  background-position: 60px 9px;
+		  background-size: 14px;
+		  padding-right: 25px;
+		  }
+	  .title-sect:after {
+		  width: 100%;		
+	  }
+	  .secpro-6{
+		  display: none;
+		  transition: all .3s linear;
+		  margin-bottom: 20px;
+	  }
+	  .secpro-3{
+		  display: none;
+		  transition: all .3s linear;
+	  }
+	  .filtros_superior{
+		  display: none;
+		  transition: all .3s linear;
+	  }
+	  
+	  .nombre_seccion {
+		  padding: 10px 0px 10px 0px;
+	  }
+	  
+	  .pro-col .col-md-6{
+		  width: 50% !important;
+	  }
+	  .pro-col-des-1 {
+		  width: 100%;
+	  }
+	  .pro-col-des-2 {
+		  margin-left: 0px;
+		  width: 100%;
+	  }
+	  .secpro-7 {
+		  padding: 10px 10px 10px 10px;
+	  }
+	  
+  }
+  
+  .back_popup {
+	  background-color: rgba(0,0,0,0.7);
+	  width: 100%;
+	  height: 100%;
+	  position: fixed;
+	  left: 0px;
+	  top: 0px;
+	  display: none
+  }
+  .contenedor_popup {
+	  padding: 90px 5px;
+	  width: 310px;
+	  height: 70px;
+	  position: absolute;
+	  left: 0px;
+	  top: 0px;
+	  bottom: 0px;
+	  right: -18px;
+	  margin: auto;
+	  border-radius: 10px
+  }
+  .contenedor_popup .cerrar {
+	  position: absolute;
+	  width: 35px;
+	  height: 35px;
+	  right: 0px;
+	  top: 0px;
+	  cursor: pointer;
+	  color: #fff;
+	  display: none
+  }
+  #mensaje_popup {
+	  color: #666;
+	  text-align: center;
+	  font-size: 18px
+  }
+  #mensaje_popup h2 {
+	  color: #666;
+	  text-align: center;
+	  font-size: 24px;
+	  font-style: normal
+  }
+  
+  
+  /*3 BOTONES CAROUSEL ICONOS PAGINA INTERNA*/
+  
+  .owl-carousel .owl-nav button.owl-next{
+	  	width: 30px;
+	  	height: 30px;
+	  	font-size: 0;
+	  	background-image: url(https://www.colsubsidio.com/vivienda/proyectos/images/banners/flecha-next.png) !important;
+  }
+  
+  .owl-carousel .owl-nav button.owl-prev{
+		width: 30px;
+	  	height: 30px;
+	  	font-size: 0;
+	  	background-image: url(https://www.colsubsidio.com/vivienda/proyectos/images/banners/flecha-prev.png) !important;
+  }
+  
+  .owl-next {
+	  right: -0.3rem !important;
+  }
+  
+  .owl-prev {
+	  left: -0.3rem !important;
+  }
+  
+  /* .owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+	  display: contents !important;
+  } */
+  
+  .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
+		position: absolute;
+		top: 25%;
+		transform: translateY(-50%);
+		background-color: #fff !important;
+		padding: 1.4rem;
+		border-radius: 50%;
+		box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+		background-size: 10px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next:hover {
+		background-size: 10px !important;
+		background-repeat: no-repeat !important;
+		background-position: center !important;
+	}
+  
+  .plan-apart-2 .owl-carousel .owl-nav button.owl-prev, .plan-apart-2 .owl-carousel .owl-nav button.owl-next {
+	  top: 50%;
+	  display: none;
+  }
+  
+  .owl-carousel .owl-nav button.owl-prev:hover {
+	  background: rgb(0, 103, 177);
+  }
+  
+  .owl-carousel .owl-nav button.owl-next:hover {
+	  background: rgb(0, 103, 177);
+  }
+  
+  @media screen and (max-width: 720px) {
+	.owl-next {
+	  right: -1rem !important;
+	  }
+  
+	.owl-prev {
+	  left: -1rem !important;
+	  }
+  }
+  
+  /* FIN 3 BOTONES CAROUSEL ICONOS PAGINA INTERNA*/
+  
+  
+  /* BOTONES SLIDE*/
+  
+  .carousel-control-prev-icon{
+	  padding: 35px 35px 35px 35px;
+  }
+  
+  .carousel-control-next-icon{
+	  padding: 35px 35px 35px 35px;
+  }
+  
+  
+  .carousel-control-prev-icon {
+	  background-image: url("https://www.colsubsidio.com/vivienda/proyectos/imagenes-vivienda/vivienda-prev.png");
+	  opacity: 1;
+  }
+  
+  .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+	width: 43px;
+    height: 43px;
+    border-radius: 50%;
+	opacity: 1;
+  }
+
+.carousel-control-prev:focus {
+	position: absolute;
+    right: auto;
+    left: 34px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.carousel-control-next:focus {
+	position: absolute;
+    right: 33px;
+    left: auto;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.carousel-control-prev:hover {
+	position: absolute;
+    right: auto;
+    left: 33px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.carousel-control-next:hover {
+	position: absolute;
+    right: 34px;
+    left: auto;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+  
+  .carousel-control-next-icon {
+	  background-image: url("https://www.colsubsidio.com/vivienda/proyectos/imagenes-vivienda/vivienda-next.png");
+	  opacity: 1;
+  }
+  
+  .carousel-control-next-icon:focus, .carousel-control-prev-icon:focus {
+	outline: none !important;
+    -webkit-box-shadow: 0 0 0 0 #fff, 0 0 0 0 #333 !important;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 0 #333 !important;
+  }
+  
+  @media screen and (max-width: 720px) {
+	.carousel-control-prev-icon {
+	  background-size: 60%;
+	  }
+  
+	.carousel-control-next-icon {
+	  background-size: 60%;
+	  }
+  }
+  /* FIN BOTONES SLIDE*/
+  
+  
+  .custom-control {
+	  padding-left: 0;
+  }
+  
+  .planpro7 {
+	  border-right-width: 1px;
+	  border-right-style: solid; 
+	  color:#adadad;
+  }
+  
+  .activa_planos {
+	  background-color: rgba(0, 30, 91, 0.05);
+	  color: rgb(0, 103, 177) !important;
+	  font-weight: bold !important;
+  }
+  
+  .activa_planos:hover {
+	  background-color: rgba(0, 30, 91, 0.100);
+	  color: rgb(0, 103, 177) !important;
+  }
+  
+  .btn-primary:hover {
+	 color: #001F5B;
+	  background-color: rgba(0, 30, 91, 0.100);
+	  border-color: transparent;
+  }
+  
+  .logsproyct {
+	  width: 20%;
+	  position: absolute;
+	  top: 85px;
+	  left: 25px;
+	  border-radius: 3px;
+  }
+  
+  .boxareades {
+	position: absolute;
+	left: 0.5rem;
+	bottom: 3rem;
+	background-color: rgba(0, 0, 0, 0.70);
+    border-radius: 5px;
+    padding-top: 7px;
+    z-index: 10;
+  }
+  
+  .planos_valores-1 {
+	  float: left;
+	  margin-left: 10px;
+	  margin-right: 10px;
+  }
+  
+  .boxareades h4{
+	  color: #FFB100;
+	  font-size: 14px;
+	  font-weight: 700;
+	  margin-top: 0;
+	  text-align: center;
+  }
+  
+  .boxareades p{
+	  color: #fff !important;
+	  font-size: 10px;
+	  font-weight: 400;
+	  margin-top: 5px;
+	  margin-top: 0;
+  }
+  
+  
+  #lbl_precio_desde {
+	  margin-top: -15px;
+	  /* margin-left: 15px; */
+  }
+  
+  /* SLIDE HOME */
+  
+  .slidedsl {
+	  width: 100%;
+	  min-height: 340px;
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  background-position-y: -55px;
+  }
+  
+  .pscImg {
+	  position: relative;
+	  top: 40px;
+  }
+  
+  .principal_slidervi h2 {
+	  color: #fff;
+	  font-size: 40px;
+	  font-weight: 600;
+	  padding-left: 0;
+	  line-height: 1.2em;
+	  margin-left: -4px;
+	  margin-top: 70px;
+	  font-family: 'Source Sans Pro' !important;
+  }
+  
+  .principal_slidervi h3 {
+	  color: #fff;
+	  font-size: 40px;
+	  font-weight: 600;
+	  padding-left: 0;
+	  line-height: 1.2em;
+	  margin-left: -4px;
+	  margin-top: -10px;
+	  font-family: 'Source Sans Pro' !important;
+  }
+  
+  .principal_slidervi a {
+	  background-color: transparent;
+	  border: 2px solid #fff;
+	  border-radius: 10px;
+	  cursor: pointer;
+	  color: #fff;
+	  font-size: 14px;
+	  font-weight: 400;
+	  position: relative;
+	  top: 33px;
+   }
+  
+   .principal_slidervi a:hover {
+	  color: #fff;
+   }
+  
+  .btocon-02 {
+	  padding: 10px 40px !important;
+	  margin-top: 50px;
+  }
+ 
+  
+  .principal_slidervi h4 {
+	  color: #fff;
+	  font-size: 18px !important;
+	  font-weight: 400 !important;
+	  line-height: 1.5em !important;
+	  margin-top: 0;
+	  font-family: 'Source Sans Pro' !important;
+  }
+  
+  .principal_slidervi p {
+	  color: #fff;
+	  font-size: 12px !important;
+	  font-weight: 400 !important;
+	  margin-top: 90px !important;
+	  font-family: 'Source Sans Pro' !important;
+  }
+  
+  .tparrows {
+	  background: transparent;
+	  background: transparent;
+  }
+  
+  .tparrows:hover {
+	  background: transparent;
+  }
+  
+  .positionimgslide{
+	  margin-top: -18px !important;
+  }
+  .positionimgslide2 {
+	  margin-top: 32px !important;
+  }
+  
+  
+  .uranus.tparrows:before {
+	  width: 50px;
+	  height: 50px;
+	  line-height: 50px;
+	  font-size: 40px;
+	  transition: all 0.3s;
+	  -webkit-transition: all 0.3s;
+  }
+  
+  .upload-title-slide2{
+	  margin-top: 45px !important;
+  }
+  
+  #lbl_planos_areas_construida {
+	color: #FFB100;
+    font-size: 16px;
+    font-weight: 700;
+	position: relative;
+    top: -12px;
+  }
+  
+  #lbl_planos_area_privada {
+	color: #FFB100;
+    font-size: 16px;
+    font-weight: 700;
+	position: relative;
+    top: -12px;
+  }
+  
+  
+  @media screen and (max-width: 768px){
+	  .principal_slidervi img {
+		  width: 60rem!important;
+		  max-width: 950px;
+	  }
+  
+	  .slide-vivienda .owl-nav button.owl-prev {
+		  width: 30px !important;
+		  height: 30px !important;
+		  font-size: 15px !important;
+	  }
+  
+	  .slide-vivienda .owl-nav button.owl-next {
+		  width: 30px !important;
+		  height: 30px !important;
+		  font-size: 15px !important;
+	  }
+  
+	  .principal_slidervi h2 {
+		  font-size: 25px;
+		  margin-top: 60px;
+		  margin-left: 30px;
+	  }
+  
+	  .principal_slidervi h3 {
+		  font-size: 25px;
+		  margin-top: -5px;
+		  margin-left: 30px;
+	  }
+  
+	  .principal_slidervi h4 {
+		  font-size: 12px !important;
+		  margin-left: 30px;
+	  }
+  
+	  .principal_slidervi a {
+		  border-radius: 5px;
+		  font-size: 12px;
+		  padding: 8px 20px !important;
+		  margin-left: 30px;
+	  }
+  
+	  .principal_slidervi p {
+		  margin-top: 75px !important;
+		  margin-left: 30px;
+	  }
+  
+	  .slide-vivienda .owl-nav button.owl-prev, .slide-vivienda .owl-nav button.owl-next {
+		  margin-top: 15% !important;
+	  }
+  
+	  .ims-personas1 img{
+		  display: none !important;
+	  }
+	  
+	  .ims-personas2 img{
+		  display: none !important;
+	  }
+  
+	  .owl-carousel.owl-drag .owl-item {
+		  height: auto !important;
+	  }
+  
+	  .slidedsl {
+		  margin-top: -30px;
+		  background-size: cover;
+	  }
+  
+	  .texto_terminos-slide {
+		  top: -20px !important;
+	  }
+  
+  }
+  
+  .ims-personas1 img{
+	max-width: 100%;
+    position: absolute;
+    top: 130px;
+  }
+  
+  .ims-personas2 img{
+		max-width: 100%;
+		position: absolute;
+		top: 35px;
+  }
+  
+  .slide-vivienda .owl-nav button.owl-prev, .slide-vivienda .owl-nav button.owl-next {
+	  background: #fff;
+	  border: none;
+	  padding: 0 !important;
+	  border-radius: 25px;
+	  position: absolute;
+	  margin-top: 5%;
+	  transform: translateY(-50%);
+	  font-size: 20px;
+  }
+  
+  .slide-vivienda .owl-nav button.owl-prev:hover, .slide-vivienda .owl-nav button.owl-next:hover {
+	  background: #011F5B;
+  }
+  
+  .slide-vivienda .owl-nav button.owl-prev {
+	  width: 40px;
+	  height: 40px;
+	  color: #011F5B;
+	  font-weight: bold;
+	  font-size: 20px;
+  }
+  
+  .slide-vivienda .owl-nav button.owl-next {
+	  width: 40px;
+	  height: 40px;
+	  color: #011F5B;
+	  font-weight: bold;
+	  font-size: 20px;
+  }
+  
+  .slide-vivienda .owl-nav [class*=owl-] {
+	  margin: 20px;
+  }
+  
+  /* .banner-dersize img{
+	  width: 273px !important;
+	  min-height: 304px;
+  }*/
+  
+  .clr-blue h2{
+	  color: #00005b;
+  }
+  
+  .clr-blue h4{
+	  color: #00005b;
+  }
+  
+  .clr-blue p{
+	  color: #00005b;
+  }
+  
+  .clr-blue a{
+	  color: #00005b;
+	  border: 2px solid #00005b;
+  }
+  
+  .clr-blue a:hover {
+	  color: #00005b;
+  }
+  
+  .sticky-top {
+	  top: 140px;
+	  z-index: 1020;
+  }
+  
+  .form-control:focus {
+	  border-color: rgb(0, 103, 177);
+	  box-shadow: none;
+  }
+  
+  .option-apto{
+	  padding: 5px 10px 15px 0px;
+	  margin-top: -8px;
+  }
+  
+  .option-apto ul{
+	  list-style: none;
+  }
+  
+  .option-apto ul, li{
+	  font-size: 14px;
+	  padding-left: 5px;
+	  margin: 5px;
+	  font-weight: 300;
+  }
+  
+  .u-btn--white {
+	  background-color: #fff;
+	  color: #001f5b;
+  }
+  
+  .u-btn--white:hover {
+	  color: rgb(0, 103, 177);
+  }
+  
+  .frm-bold {
+	  font-weight: bold;
+  }
+  
+  /* .afiliado-one {
+	  border: 0;
+	  outline: 0;
+	  border-bottom: 1px solid rgb(0, 103, 177);
+	  margin-top: -5px;
+	  border-radius: 0;
+	  font-size: 14px;
+  } */
+
+  input, select {
+	width: 100% !important;
+    height: 36px !important;
+    background: hsl(0, 0%, 100%);
+    border: 1px solid hsl(210, 26%, 91%) !important;
+    box-sizing: border-box !important;
+    border-radius: 8px !important;
+    font-weight: 400 !important;
+    font-size: 0.875rem !important;
+    line-height: 18px !important;
+    color: hsl(0, 0%, 46%) !important;
+    padding: 6px !important;
+  }
+  
+  /* proceso cotizacion */
+  
+  .comencemos_tu_proceso_1 {
+	  padding-top: 0px;
+  }
+  
+  .identificacion_kb h1{
+	  font-size: 36px;
+	  font-weight: 600;
+	  text-align: center;
+	  color: #333;
+	  font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .identificacion_kb img{
+	  width: 60px;
+	  display: block;
+	  margin: auto;
+	  padding-bottom: 10px;
+  }
+  
+  .identificacion_kb {
+	  padding: 10px 55px;
+  }
+  
+  .identificacion_kb .form-control {
+	  color: rgb(51, 51, 51);
+	  border: 1px solid #c4c4c4;
+	  border-radius: 0.50rem;
+	  margin-top: 4px;
+	  padding: .4rem;
+  }
+  
+  .identificacion_1 {
+	  text-align: center;
+  }
+  
+  .btn-identificacion_2 {
+	  border: 1px solid #00005B;
+	  background-color: #00005B;
+	  color: #fff;
+	  font-size: 16px;
+	  padding: 10px 40px;
+	  font-weight: 400;
+	  border-radius: 10px;
+	  transition: all .3s linear;
+	  cursor: pointer;;
+  }
+  
+  .btn-identificacion_2:hover {
+	  border: 1px solid #00005B;
+	  background-color: transparent;
+	  color: #00005B;
+  }
+  
+  .btn-primary.focus, .btn-primary:focus {
+	  box-shadow: 0 0 0 0.2rem rgba(0,0,0,0);
+	  color: #ffffff;
+  }
+  
+  .identificacion_1 a:focus {
+	  color: #ffffff !important;
+  }
+  
+  .texto_terminos-slide {
+	  position: relative;
+	  top: -35px;
+  }
+  
+  .espacio_interna-2 {
+	  padding: 10px;
+  }
+  
+  .espacio_interna-1 {
+	  padding: 20px;
+  }
+  
+  .espacio_interna-3 {
+	  padding: 30px;
+  }
+  
+  .espacio_interna-4 {
+	  padding: 40px;
+  }
+  
+  .tx_mrg-l {
+	  margin-left: -22;
+  }
+
+  #sidebar span[data-hs-cos-type="simple_menu"] ul li {
+    font-weight: 400;
+}
+
+	.vig img {
+		mix-blend-mode: multiply;
+	}
+
+	.img-nuestra-vivienda {
+		width: 280px !important;
+		margin-top: 20px;
+		margin-left: -22px;
+	}
+
+	.carousel-control-next, .carousel-control-prev {
+		opacity: 1;
+		transition: opacity .15s ease;
+	}
+
+	.btnvideollamada {
+		cursor: pointer;
+	}
+
+	.btnvideollamada:hover {
+		text-decoration: none !important;
+	}
+
+	.box-videomrg {
+		margin-bottom: 15px !important;
+	}
+
+	.box-videollamada {
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+		-o-border-radius: 6px;
+		border-radius: 6px;
+	}
+
+	a.box-videollamada:is(:hover, :active, :focus) {
+		background-color: hsl(0, 0%, 100%);
+		border: 1px solid hsl(210, 26%, 91%);
+	}
+
+	.box-videollamada .imgText {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 12px;
+	}
+
+	.box-videollamada .imgText .imgPro {
+		width: 15%;
+	}
+
+	/* .box-videollamada .img_size-call .imgPro img {
+		width: 34px !important;
+	} */
+
+	.box-videollamada .imgText .textPro {
+		width: 85%;
+	}
+
+	.boton-texto.centerText {
+		text-align: center;
+	}
+
+	.box-videollamada img {
+		width: 36px !important;
+		margin-bottom: 0 !important;
+	}
+
+	.box-videollamada .boton-texto {
+		font-size: 0.875rem!important;
+		line-height: 20px !important;
+		color: rgb(0, 103, 177);
+		text-align: left;
+		margin-top: 0;
+    	margin-bottom: 0;
+	}
+
+	.box-videollamada .boton-texto:hover {
+		text-decoration: none !important;
+	}
+
+	.box-videollamada .textPro .textdescripcion {
+		font-weight: 400;
+		font-size: 0.625rem;
+		line-height: 13px;
+		color: rgb(117, 117, 117);
+		text-align: left;
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.simuladorPlan {
+		background-color: rgb(246, 247, 252);
+		box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+		padding: 1.875rem 1.55rem;
+		margin-bottom: 40px;
+	}
+
+	.simuladorPlan .planSimulador {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		gap: 20px;
+	}
+
+	.simuladorPlan .planSimulador .img {
+		width: 5%;
+	}
+
+	.simuladorPlan .planSimulador .img svg {
+		mix-blend-mode: multiply;
+	}
+
+	.simuladorPlan .planSimuladorTwo .proAlianza .img svg {
+		mix-blend-mode: multiply;
+	}
+
+	.simuladorPlan .planSimulador .paragraph {
+		width: 80%;
+    	margin-right: 180px;
+	}
+
+	.simuladorPlan .planSimulador .btnGroupSimular {
+		width: 7%;
+
+	}
+
+	.simuladorPlan .planSimulador .paragraph p {
+		font-weight: 400;
+		font-size: 0.875rem;
+		line-height: 18px;
+		margin-bottom: 0;
+	}
+
+	.simuladorPlan .planSimulador .btnGroupSimular .btnArrow {
+		width: 20px !important;
+		background: transparent url(https://7212050.fs1.hubspotusercontent-na1.net/hubfs/7212050/iconos/flecha-acordeon.svg) no-repeat center right !important;
+		background-size: 20px !important;
+		border: none !important;
+		font-size: 18px !important;
+		color: transparent !important;
+	}
+
+	.simuladorPlan .planSimulador .btnGroupSimular .btnArrow {
+		display: none;
+	}
+
+	.simuladorPlan .planSimulador .btnGroupSimular input:valid {
+		background-color: transparent;
+		color: transparent;
+	}
+
+	.simuladorPlan .planSimulador .btnGroupSimular .cta {
+		width: 100%;
+		height: 56.1px;
+		background-color: rgb(0, 103, 177);
+		border: 1px solid rgb(0, 103, 177);
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
+		border-radius: 30px;
+		font-weight: 400;
+		font-size: 1.25rem;
+		letter-spacing: -0.25px;
+		color: rgb(250, 251, 253);	
+	}
+
+	.simuladorPlan .planSimulador .btnGroupSimular .cta:hover,
+	.simuladorPlan .planSimulador .btnGroupSimular .cta:active,
+	.simuladorPlan .planSimulador .btnGroupSimular .cta:focus {
+		background-color: rgb(0, 54, 92);
+		border: 1px solid rgb(0, 103, 177);
+	}
+
+	.simuladorPlan .planSimuladorTwo .proAlianza {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+
+	.simuladorPlan .planSimuladorTwo .proAlianza .img {
+		width: 10%;
+	}
+
+	.simuladorPlan .planSimuladorTwo .proAlianza .paragraph {
+		width: 83%;
+	}
+
+	.simuladorPlan .planSimuladorTwo .proAlianza .btnGroupSimular {
+		width: 4%;
+	}
+
+	.simuladorPlan .planSimuladorTwo .proAlianza .paragraph p {
+		font-weight: 400 !important;
+		font-size: 0.875rem !important;
+		line-height: 18px !important;
+		margin-bottom: 0 !important;
+	}
+
+	.simuladorPlan .planSimuladorTwo .proAlianza .btnGroupSimular .btnArrow {
+		width: 20px !important;
+		background: transparent url(https://www.colsubsidio.com/wp-proyectos-vivienda/wp-content/uploads/2022/04/arrow-select.png) no-repeat center right !important;
+		background-size: 20px !important;
+		border: none !important;
+		font-size: 18px !important;
+		color: transparent !important;
+	}
+
+	.simuladorPlan .planSimuladorTwo .proAlianza .btnGroupSimular .btnArrow {
+		display: none;
+	}
+
+	.planSimuladorTwo h3 {
+		font-weight: 600 !important;
+		font-size: 1.25rem !important;
+		line-height: 26px !important;
+		letter-spacing: -0.25px !important;
+		color: rgb(0, 103, 177) !important;
+	}
+
+	.simuladorPlan #formulario_cotizacion {
+		margin-top: 1rem;
+    	padding: 2rem 0;
+	}
+
+	.simuladorPlan #formulario_cotizacion h4 {
+		font-weight: 600;
+		font-size: 1.25rem;
+		line-height: 26px;
+		letter-spacing: -0.25px;
+		color: rgb(0, 103, 177);
+	}
+
+	.simuladorPlan #formulario_cotizacion label {
+		font-weight: 400;
+		font-size: 0.875rem;
+		line-height: 18px;
+		color: rgb(51, 51, 51);
+		margin-bottom: 4px;
+	}
+
+	.simuladorPlan #formulario_cotizacion .form-group {
+		margin-bottom: 1.5rem;
+	}
+
+	.simuladorPlan #formulario_cotizacion input[type="hidden"],
+	.simuladorPlan #formulario_cotizacion input[type="text"],
+	.simuladorPlan #formulario_cotizacion input[type="email"],
+	.simuladorPlan #formulario_cotizacion select {
+		font-family: 'Source Sans Pro', sans-serif !important;
+		width: 100%;
+		height: 40px;
+		background-color: rgb(255, 255, 255);
+		border: 1px solid rgb(226, 232, 238);
+		box-sizing: border-box;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		font-weight: 400;
+    	font-size: 0.875rem;
+		color: rgb(51, 51, 51);
+	}
+
+	.simuladorPlan #formulario_cotizacion input[type="hidden"]::placeholder,
+	.simuladorPlan #formulario_cotizacion input[type="text"]::placeholder,
+	.simuladorPlan #formulario_cotizacion input[type="email"]::placeholder,
+	.simuladorPlan #formulario_cotizacion select {
+		font-weight: 400;
+    	font-size: 0.875rem;
+		color: rgb(51, 51, 51);
+	}
+
+	.simuladorPlan #formulario_cotizacion select {
+		background-image: url(https://www.colsubsidio.com/wp-proyectos-vivienda/wp-content/uploads/2022/04/arrow-select.png) !important;
+		background-repeat: no-repeat !important;
+		background-position: 94% center !important;
+		background-size: 12px !important;
+	}
+
+	.simuladorPlan #formulario_cotizacion #div-botones  {
+		text-align: center;
+    	margin-top: 20px;
+	}
+
+	.simuladorPlan #formulario_cotizacion #div-botones .cta {
+		width: 340px;
+		height: 56.1px;
+		background-color: rgb(0, 103, 177);
+		border: 1px solid rgb(0, 103, 177);
+		-webkit-border-radius: 30px !important;
+		-moz-border-radius: 30px !important;
+		border-radius: 30px !important;
+		font-weight: 400;
+		font-size: 1.25rem !important;
+		line-height: 40px !important;
+		letter-spacing: -0.25px;
+		color: rgb(250, 251, 253) !important;
+	}
+
+	.simuladorPlan #formulario_cotizacion #div-botones .cta:hover {
+		background-color: rgb(0, 54, 92);
+		border: 1px solid rgb(0, 103, 177);
+	}
+
+	.simuladorPlan #formulario_cotizacion .HabeasDT {
+		font-weight: 400;
+		font-size: 0.75rem;
+		line-height: 18px;
+	}
+
+	.simuladorPlan #formulario_cotizacion .HabeasDT a {
+		font-weight: 400;
+		font-size: 0.75rem;
+		line-height: 18px;
+		color: rgb(0, 103, 177) !important;
+	}
+
+	.simuladorPlan #formulario_cotizacion .HabeasDT a:hover {
+		text-decoration: underline !important;
+	}
+
+	.titulo_box_simulador{
+		font-weight: 600 !important;
+		font-size: 1.25rem !important;
+		line-height: 26px !important;
+		letter-spacing: -0.25px !important;
+		color: rgb(0, 103, 177) !important;
+		margin-bottom: 10px;
+	}
+
+	/* .fixed {
+		position: fixed;
+		top: 75px;
+		width: 248px;
+	} */
+
+	.img-logo-360 {
+		width: 100%;
+	  }
+
+	  .header.fixed {
+		top: 0;
+	}
+
+	.boxGraciasRegistro {
+		background-color: rgb(246, 247, 252);
+		border: 1px solid rgb(226, 232, 238);
+		border-radius: 0px 0px 6px 6px;
+		padding: 1.25rem;
+		width: 100%;
+		text-align: center;
+	}
+
+	.boxGraciasRegistro img {
+		width: 36px;
+    	margin-bottom: 10px;
+	}
+
+	.boxGraciasRegistro  .title {
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 25px;
+		color: rgb(51, 51, 51);
+		margin-bottom: 10px;
+	}
+
+	.boxGraciasRegistro .paragraph {
+		font-weight: 400;
+		font-size: 0.75rem;
+		line-height: 18px;
+		color: rgb(51, 51, 51);
+	}
+
+	#div-botones-iniciales .u-btn--one {
+		width: 100%;
+		height: 50px;
+		background: rgb(255, 255, 255);
+		border: 1px solid rgb(0, 103, 177);
+		border-radius: 30px;
+		font-weight: 400 !important;
+		font-size: 1.1rem !important;
+		letter-spacing: -0.25px;
+		color: rgb(0, 103, 177) !important;
+		padding: 0.938rem 0.625rem;
+	}
+
+	#div-botones-iniciales .u-btn--one:hover {
+		background-color: #00365c !important;
+    	border: 1px solid #0067b1 !important;
+		color: rgb(255, 255, 255) !important;
+	}
+
+	.mrgGT {
+		margin-bottom: 0 !important;
+	}
+
+	.newStyle {
+		border: none;
+		background-color: transparent;
+		padding: 0;
+	}
+
+	.btnSimularplan {
+		position: relative;
+		left: 7rem;
+		margin-bottom: 30px;
+	}
+
+	.btnSimularplan .cta {
+		width: 340px;
+		height: 56px;
+		background: rgb(255, 255, 255);
+		border: 1px solid rgb(0, 103, 177);
+		border-radius: 30px;
+		font-weight: 400 !important;
+		font-size: 1.25rem !important;
+		line-height: 40px !important;
+		align-items: center;
+		text-align: center;
+		letter-spacing: -0.25px;
+	}
+
+
+	.btnSimularplan .cta:hover {
+		color: #fff !important;
+		background-color: #00365c !important;
+		border: 1px solid #0067b1 !important;
+		text-decoration: none !important;
+	}
+
+	#ingreso_datos_form_interna {
+		margin-bottom: 0 !important;
+	}
+
+	#div-str_planos_galeria .owl-carousel .owl-nav.disabled {
+		display: block;
+	}
+
+	.plan-apart-2 .owl-carousel .owl-nav button.owl-prev, .plan-apart-2 .owl-carousel .owl-nav button.owl-next {
+		display: block;
+	}
+
+	.vid-apart .img_360 {
+		border-radius: 0px 15px 15px 0px;
+	}
+
+	@media screen and (min-width: 1280px) {
+		.containerInternaVivienda .container {
+			padding: 12px 5px !important;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.col-md-3 {
+			padding-right: calc(var(--bs-gutter-x) * .1) !important;
+			padding-left: calc(var(--bs-gutter-x) * .4) !important;
+		}
+	}
+
+	.form_informacion select {
+		background-image: url(https://www.colsubsidio.com/wp-proyectos-vivienda/wp-content/uploads/2022/04/arrow-select.png) !important;
+		background-repeat: no-repeat !important;
+		background-position: 94% center !important;
+		background-size: 12px !important;
+	}
+
+
+  @media screen and (max-width:767px){
+
+	.containerInternaVivienda .bannerInterna img {
+		height: 5.2%;
+	}
+
+	.sec-pro-10 p{
+		text-align: left;
+  }
+  
+		.boxareades {
+		right: 0;
+		position: relative;
+		width: 72%;
+		padding: 10px 20px 2px 20px;
+		margin: auto;
+	}
+
+	.boxareades p{
+		font-size: 0.46rem;
+	}
+
+	.boxareades h4{
+		font-size: 0.70rem;
+	}
+
+	.altrBg {
+		height: 375px;
+	}
+
+	.mig_pan-1 {
+		margin-top: 10px;
+	}
+
+	.carousel-control-next, .carousel-control-prev {
+		top: -42%;
+	}
+
+	.carousel-control-prev {
+		left: 12px;
+	}
+
+	.carousel-control-next {
+		right: 12px;
+	}
+
+	.boxdescrip {
+		font-size: 10px !important;
+		margin-bottom: 20px;
+	}
+
+	.lineboxdescri {
+		background-color: #ffffff !important;
+	}
+
+	.plan-apart-2 a {
+		text-align: left;
+	}
+
+	/* .sec-9-2 {
+		padding: 20px;
+	} */
+
+	.sec-9 {
+		padding-bottom: 0;
+		padding: 20px;
+	}
+
+	.sec-pro-9 h4 {
+		padding-left: 0;
+		text-align: left;
+		padding-top: 0;
+	}
+
+	.sec-pro-9 p {
+		padding-left: 0;
+		margin-bottom: 30px;
+		text-align: left;
+	}
+
+	#lbl_telefonos {
+		text-align: left;
+		padding-left: 0;
+	}
+
+	#lbl_direccion {
+		padding-left: 0;
+		padding: 0;
+		text-align: left;
+		padding-bottom: 0;
+	}
+
+	#lbl_email_sala_de_ventas {
+		text-align: left;
+		padding-left: 0;
+		}
+	
+		#lbl_horarios {
+			text-align: left;
+			padding-bottom: 0;
+			padding-left: 0;
+		}
+	
+		.tx_mrg-l {
+			margin-left: 0;
+		}
+	  /*CAMBIO VISTA*/
+  
+  .filtros_superior .form-group{
+	  top: 40px !important;
+  }	
+  
+  .filtros_superior .form-group{
+  position: relative;
+  top: 60px;
+  }
+  
+  .pro-col_lis{
+	  position: relative;
+	  min-height: 136px;
+	  overflow: hidden;
+  }
+  .pro-col_lis p{
+	  font-size: 0.56rem;
+  }
+  .pro-col_lis .img-fluid {
+	  max-width: 10.4rem;
+	  position: absolute;
+	  top: 0px;
+	  left: 0px;
+  }
+  .pro-col_lis .product-name {
+	  width: 50%;
+	  float: right;
+	  position: absolute;
+	  top: 8px;
+	  right: -3px;
+	  font-size: 0.56rem;
+  }
+  .pro-col_lis .product-ids {
+	  width: 50%;
+	  float: right;
+	  position: absolute;
+	  right: 1px;
+	  top: 30px;
+  }
+   .pro-col_lis .row{
+	  width: 50%;
+	  position: absolute;
+	  top: 30px;
+	  right: 0px;
+	  padding: 0px;
+	  margin: 0px;
+		  
+  }	
+  .pro-col_lis .col-md-6{
+	  width: 100% !important;		
+	  padding: 0px;
+	  margin: 0px;
+  }
+  .pro-col_lis .pro-col-des-1 {
+	  width: 100%;
+	  margin: 0px;
+	  padding: 0px;
+	  background-color: transparent;
+  }
+  .pro-col_lis .pro-col-des-1 h4{
+	  text-align: left;		
+	  padding: 5px 5px 5px 15px;
+	  margin: 0px;
+	  font-size: 0.56rem;
+	  right: -4px;
+  }
+  .pro-col_lis .pro-col-des-1 p{
+	  text-align: left;		
+	  padding: 10px 5px 5px 15px;
+	  margin: 0px;
+	  position: relative;
+	  top: 2;
+	  right: -4px;
+  }
+  .pro-col_lis .pro-col-des-2 {
+	  width: 100%;
+	  margin: -25px 0px 0px 0px;
+	  padding: 0px;
+	  background-color: transparent;
+  }
+  .pro-col_lis .pro-col-des-2 h4{
+	  text-align: left;		
+	  padding: 5px 5px 5px 15px;
+	  margin: 0px;
+	  font-size: 0.56rem;
+	  right: -4px;
+  }
+  .pro-col_lis .pro-col-des-2 p{
+	  text-align: left;		
+	  padding: 10px 5px 5px 15px;
+	  margin: 0px;
+	  position: relative;
+	  top: 2;
+	  right: -4px;
+  }
+  .pro-col_lis .adicional_ids {
+	  position: absolute;
+	  top: 75%;
+	  left: 0px;
+	  font-size: 12px;
+	  width: 100%;
+	  border-top: 1px solid #c8c8c8;
+	  border-right: 0px solid #c8c8c8;
+	  border-bottom: 0px solid #c8c8c8;
+	  border-left: 0px solid #c8c8c8;
+	  height: 40px;
+	  padding: 5px;
+  }
+  .pro-col_lis .adicional_ids .pro-col-des-3{
+	  float: left;
+	  width: 50%;
+	  border: 0px;
+	  padding: 8px 0px 0px 0px;
+  }
+  .pro-col_lis .adicional_ids .pro-col-des-4{
+	  float: right;
+	  width: 50%;
+  }
+  
+  .pro-col h4{
+	  font-size:14px;
+  }
+  
+  .pro-col_lis .logsproyct  {
+	  max-width: 10%;
+	  top: 10px;
+	  left: 10px;
+  }
+  
+  .pro-col_lis .ajustexv1{
+	  position: relative;
+	  top: -7px;
+	  right: -4px;
+  }
+  .ordenar{
+	  position: relative;
+	  top: -15px;
+  }
+  
+  .arsear {
+	  z-index: -1;
+  }
+
+  .img-nuestra-vivienda {
+		width: 100% !important;
+		margin-top: 60px;
+		max-width: 85% !important;
+		margin-left: 20px;
+	}
+
+	.simuladorPlan {
+		padding: 1rem 1.55rem;
+	}
+
+	.simuladorPlan .planSimulador {
+		gap: 20px;
+	}
+
+	.simuladorPlan .planSimulador .img {
+		width: 80%;
+		margin-bottom: 20px;
+	}
+
+	.simuladorPlan .planSimulador .paragraph {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.simuladorPlan .planSimulador .btnGroupSimular {
+		width: 10%;
+	}
+
+	.simuladorPlan #formulario_cotizacion {
+		margin-top: 2rem;
+		padding: 0;
+	}
+
+	.simuladorPlan #formulario_cotizacion #div-botones .cta {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	.simuladorPlan .planSimuladorTwo .proAlianza .img {
+		width: 15%;
+	}
+
+	.simuladorPlan .planSimulador .img {
+		width: 15% !important;
+	}
+
+	.simuladorPlan .planSimuladorTwo .proAlianza .paragraph {
+		width: 83%;
+	}
+
+	.simuladorPlan .planSimuladorTwo .proAlianza .btnGroupSimular {
+		width: 4%;
+	}
+
+	.fixed {
+		position: relative;
+		top: 0;
+		width: 100%;
+	}
+
+	.btnSimularplan {
+		left: 0;
+		text-align: center;
+	}
+
+	.btnSimularplan .cta {
+		width: 90%;
+	}
+
+	.box-videollamada .imgText {
+		justify-content: flex-start;
+		gap: 10px;
+	}
+
+	.box-videollamada img {
+		width: 36px !important;
+		margin-right: 0;
+	}
+
+	.box-videollamada .boton-texto {
+		text-align: left;
+	}
+
+	.sec-pro-6 {
+		padding-top: 10px;
+	}
+
+	.sec-pro-6 h4 {
+		margin-top: 10px;
+	}
+
+	.formMobile {
+		margin-bottom: 30px;
+	}
+
+	.breadcrumb-item a {
+		font-size: 80% !important;
+	}
+
+	.breadcrumb-item.active {
+		font-size: 80% !important;
+	}
+
+	.breadcrumb-item+.breadcrumb-item::before {
+		padding-right: 0.1rem;
+		padding-left: 0.1rem;
+	}
+
+	.breadcrumb-item+.breadcrumb-item {
+		padding-left: 0.2rem;
+	}
+
+	.breadcrumb-item.active {
+		top: 5px !important;
+	}
+
+	.breadcrumb-item+.breadcrumb-item::before {
+		font-size: 80%;
+		position: relative;
+		top: 3px;
+	}
+
+}
+
+.back_popup {
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	display: none;
+	z-index: 1100;
+}
+
+.contenedor_popup {
+	padding: 90px 5px;
+	width: 310px;
+	height: 70px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	right: -18px;
+	margin: auto;
+	border-radius: 10px;
+}
+
+.contenedor_popup .cerrar {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	right: 0px;
+	top: 0px;
+	cursor: pointer;
+	color: #fff;
+	display: none;
+}
+
+.container-jv {
+	position: relative;
+	min-height: 420px;
+}
+
+.skip-menu {
+	top: 0;
+}
+
+.vid-apart  {
+	position: relative;
+}
+
+.vid-apart  .icoPlay {
+	position: absolute;
+    right: 0;
+    left: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.vid-apart  .icoPlay svg {
+	width: 60px;
+}
+
+#ancla_g360_0 {
+	cursor: inherit;
+}
+
+@media screen and (max-width: 767px) {
+	.boxareades {
+		position: absolute;
+		width: 80%;
+		padding: 10px 5px 0px 5px;
+		margin: auto;
+		right: 0;
+		left: 0;
+	}
+
+	.plan-apart-2 img {
+		padding-left: 0;
+		margin-top: 50px;
+	}
+
+}

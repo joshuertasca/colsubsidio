@@ -1,0 +1,589 @@
+*:focus{outline:none !important;}
+
+div#contenedor-mapa {
+  transition: all 0.5 ease;
+}
+div#contenedor-mapa.show-map {
+  display:grid;
+  grid-template-columns:315px 1fr;
+} 
+#contenedor-mapa.show-map div#resource-listings.puntos-atencion ul.list li:first-child {
+  background-color: #f6f7fc;
+}
+#contenedor-mapa.show-map div#contenedor-puntos-atencion {
+  grid-template-columns: 291px;
+  max-height: 88vh;
+  overflow: auto;
+  grid-auto-rows: max-content;
+}
+#contenedor-mapa.show-map div#resource-listings.puntos-atencion ul.list li{background-color:#fff;}
+#contenedor-mapa.show-map #map{height: 88vh;}
+#contenedor-mapa div#contenedor-puntos-atencion {
+  display: grid;
+  grid-template-columns: 291px 1fr;
+  grid-gap: 29px;
+}
+#contenedor-mapa div#resource-listings.puntos-atencion ul.list {
+  display: grid;
+  /*grid-template-columns: repeat(2, 1fr);*/
+  grid-template-columns: repeat(auto-fill,minmax(294px,1fr));
+  grid-gap: 26px;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 0;
+}
+.three{
+ grid-template-columns: repeat(auto-fill,minmax(191px,1fr)) !important; 
+}
+#contenedor-mapa div#resource-listings.puntos-atencion ul.list  li{
+  background-color: #F6F7FC;
+  display: grid;
+  grid-template-rows: 1fr 60px;
+  border: 1px solid #E2E8EE;
+}
+#contenedor-mapa div#resource-listings.puntos-atencion ul.list  li div#punto-listing {
+  display: flex;
+  /*flex-wrap: wrap;
+  flex-direction: column;*/
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 11px;
+  align-items: flex-start;
+  /* justify-content: space-between;*/
+  height: 100%;
+}
+#contenedor-mapa div#resource-listings.puntos-atencion ul.list li div#punto-listing .icono {
+  width: 100%;
+/*   height: 100%; */
+}
+
+
+#contenedor-mapa div#resource-listings.puntos-atencion ul.list li div#punto-listing .texto {
+  padding: 0px 18px;
+}
+
+#contenedor-mapa.show-map div#resource-listings.puntos-atencion ul.list li div#punto-listing .icono {
+  display:block;
+}
+
+#contenedor-mapa .puntos-atencion div#punto-listing h3 {
+  font-weight: 600 !important;
+  margin-bottom:0px !important;
+  margin-top:26px;
+}
+#contenedor-mapa .puntos-atencion div#punto-listing p {
+  margin-top:16px !important;
+}
+#contenedor-mapa .puntos-atencion .punto-information p:first-child {
+  margin-bottom: 7px;
+}
+#contenedor-mapa .puntos-atencion .footer-punto {
+  background-color: #fff;
+  text-align: center;
+  border-top: 1px solid #E2E8EE;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#contenedor-mapa .puntos-atencion .footer-punto p {
+  position: relative;
+}
+#contenedor-mapa .puntos-atencion .footer-punto p:first-child:after {
+  content: "";
+  width: 1px;
+  height: 36px;
+  background-color: #D6D6D6;
+  position: absolute;
+  right: 0;
+  top: -15%;
+}
+/* #contenedor-mapa .footer-punto p a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+/* #contenedor-mapa .footer-punto p a img {
+  margin-right: 6px;
+  max-width: 24px;
+} */
+#contenedor-mapa .puntos-atencion  .nav {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  padding-top: 15px;
+}
+#contenedor-mapa .puntos-atencion  .nav ul.pagination {
+  font-size: 20px;
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  margin: 0;
+  flex-direction: row;
+}
+#contenedor-mapa .puntos-atencion  .nav ul.pagination li {
+  padding: 0 7px;
+}
+#contenedor-mapa .puntos-atencion  .nav ul.pagination li.active {
+  background-color: #E2E8EE;
+}
+#contenedor-mapa .puntos-atencion  .nav div {
+  margin: 0 10px;
+}
+#contenedor-mapa .puntos-atencion  .nav div img{
+  vertical-align: bottom;
+  transition: all .5s ease;
+}
+#contenedor-mapa .puntos-atencion .nav div img:hover{
+  filter: opacity(0.5);
+}
+#contenedor-mapa #contenedor-puntos-atencion .filter div#header-filter {
+  display: none;
+}
+#contenedor-mapa #contenedor-puntos-atencion .filter div#header-filter img{
+  width: 20px;
+  height: 18px;
+}
+#contenedor-mapa div#contenedor-mapa.show-map  div#header-filter{
+  display: block;
+}
+#contenedor-mapa div#contenedor-mapa.show-map .filter form{
+  display:none;
+  transition:all 0.5s ease;
+}
+#contenedor-mapa #contenedor-puntos-atencion .filter-container {
+  border: 1px solid #E2E8EE;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+#contenedor-mapa #contenedor-puntos-atencion .filter form#form_id2 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#contenedor-mapa #contenedor-puntos-atencion .filter form#form_id {
+  position: relative;
+}
+
+/* #contenedor-mapa #contenedor-puntos-atencion .filter form input.limpiar {
+  margin-left: auto;
+  display: block;
+  margin-right: 0;
+  color: #0067B1;
+  background: none;
+  border: none;
+  font-size: 20px !important;
+  transition: .3s;
+}
+#contenedor-mapa #contenedor-puntos-atencion .filter form input.limpiar:hover {
+  text-decoration: underline;
+} */
+#contenedor-mapa #contenedor-puntos-atencion .filter form h3 {
+  margin-bottom: 23px !important;
+  margin-top: 15px;
+  font-weight: 400 !important;
+}
+#contenedor-mapa #contenedor-puntos-atencion .filter form  hr {
+  border-color: rgb(51 51 51 / 10%);
+}
+#contenedor-mapa #contenedor-puntos-atencion .filter form input.limpiar {
+      margin-left: auto;
+      display: block;
+      margin-right: 0;
+      color: var(--primary-color);
+      background: none;
+      border: none;
+      transition: .3s;
+      font-size: 16px !important;
+      position: absolute;
+      top: 18px;
+      right: 1px;
+    }
+#contenedor-mapa #contenedor-puntos-atencion .filter form input.limpiar-mobile {
+      margin-left: auto;
+      display: none;
+      margin-right: 0;
+      color: var(--primary-color);
+      background: none;
+      border: none;
+      font-size: 20px !important;
+      transition: .3s;
+      text-decoration-line: underline;
+      width: 100%;
+    }
+
+    #contenedor-mapa #contenedor-puntos-atencion .filter form input.limpiar:hover {
+      text-decoration: underline;
+    }
+    #contenedor-mapa #contenedor-puntos-atencion .filter form .hu16-wrapp {
+      display: block;
+      position: relative;
+      padding-left: 41px;
+      margin-bottom: 24px;
+      cursor: pointer;
+      font-size: 16px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      height:30px;
+      display: flex;
+      align-items: center;
+    }
+    #contenedor-mapa #contenedor-puntos-atencion .filter form .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 30px;
+      width: 30px;
+      background-color: #fff;
+      border: 1px solid var(--primary-color);
+      border-radius: 6px;
+    }
+    #contenedor-mapa #contenedor-puntos-atencion .filter form .hu16-wrapp input:checked ~ .checkmark {
+      background-color: var(--primary-color);
+    }
+    #contenedor-mapa #contenedor-puntos-atencion .filter form input#hu16-submit-button:hover{
+      color:#fff;
+      background-color: var(--primary-dark-color);
+    }
+    #contenedor-mapa #contenedor-puntos-atencion .filter form input#hu16-submit-button {
+      color: var(--primary-color);
+      background-color: #fff;
+      border: 1px solid var(--primary-color);
+      border-radius: 30px;
+      width: 100%;
+      font-size: 20px !important;
+      transition: all .5 ease;
+      height: 48px;
+    }
+    #contenedor-mapa .footer-punto p a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-color);
+    }
+    #contenedor-mapa .footer-punto p a img {
+      margin-right: 6px;
+      max-width: 24px;
+    }
+    #contenedor-mapa .footer-punto .mapa{
+       content: url(https://7212050.fs1.hubspotusercontent-na1.net/hubfs/7212050/Piscilago/iconos/Mapa-monotono-azul.svg);
+    }
+    #contenedor-mapa .footer-punto .circle-flecha{
+      content: url(https://f.hubspotusercontent00.net/hubfs/7212050/arrow-right-circle.svg);
+    }
+    #contenedor-mapa .puntos-atencion  .nav ul li a {
+      color:var(--primary-color);
+    }
+     #contenedor-mapa .puntos-atencion .nav div img.adelante{
+       content:  url(https://f.hubspotusercontent00.net/hubfs/7212050/Adelante.svg);
+    }
+    
+    #contenedor-mapa .puntos-atencion .nav div img.atras{
+       content: url(https://f.hubspotusercontent00.net/hubfs/7212050/Atras.svg);
+    }
+/* #contenedor-mapa #contenedor-puntos-atencion .filter form input#hu16-submit-button {
+  color: #0067B1;
+  background-color: #fff;
+  border: 1px solid #0067B1;
+  border-radius: 30px;
+  width: 100%;
+  padding: 16px;
+  font-size: 20px !important;
+  margin-top: auto;
+  transition: all .5 ease;
+} */
+/* #contenedor-mapa #contenedor-puntos-atencion .filter form input#hu16-submit-button:hover{
+  color:#fff;
+  background-color: #00365C;
+} */
+#contenedor-mapa .punto-information .tipo {
+  padding-top: 10px;
+}
+
+/****************** checks box ***************************/
+/* #contenedor-mapa #contenedor-puntos-atencion .filter form .hu16-wrapp {
+  display: block;
+  position: relative;
+  padding-left: 41px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height:30px;
+  display: flex;
+  align-items: center;
+  color: #0067B1;
+} */
+
+/* Hide the browser's default checkbox */
+#contenedor-mapa #contenedor-puntos-atencion .filter form  .hu16-wrapp input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+/* #contenedor-mapa #contenedor-puntos-atencion .filter form .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border: 1px solid #0067B1;
+  border-radius: 6px;
+} */
+
+/* On mouse-over, add a grey background color */
+/*#contenedor-mapa #contenedor-puntos-atencion .filter form .hu16-wrapp:hover input ~ .checkmark {
+  background-color: #fff;
+} */
+
+/* When the checkbox is checked, add a blue background */
+/* #contenedor-mapa #contenedor-puntos-atencion .filter form .hu16-wrapp input:checked ~ .checkmark {
+  background-color: #0067B1;
+} */
+
+/* Create the checkmark/indicator (hidden when not checked) */
+#contenedor-mapa #contenedor-puntos-atencion .filter form .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+#contenedor-mapa #contenedor-puntos-atencion .filter form .hu16-wrapp input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+#contenedor-mapa #contenedor-puntos-atencion .filter form .hu16-wrapp .checkmark:after {
+  left: 9px;
+  top: 3px;
+  width: 10px;
+  height: 17px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: none;
+}
+#contenedor-mapa #map div[tabindex="0"] {
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px #FFD000;
+}
+#contenedor-mapa .btn-filtro-movil {
+  display:none;
+}
+#contenedor-mapa .container-close {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  display: flex;
+  gap: 12px;
+  display:none;
+}
+#contenedor-mapa .container-close img{
+  height: 100%;
+  filter: invert(15%) sepia(10%) saturate(0%) hue-rotate(275deg) brightness(1%) contrast(90%);
+}
+
+  .imgCard{
+    width: 100%;
+  }
+
+  #contenedor-mapa   #contenedor-puntos-atencion  .container-filter-select .list-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-top: 13px;
+}
+
+#contenedor-mapa   #contenedor-puntos-atencion .filter-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contenedor-mapa   #contenedor-puntos-atencion .filter-title-container img{
+    margin-top: 7px;
+    margin-bottom: 13px;
+    cursor: pointer;
+}
+
+#contenedor-mapa   #contenedor-puntos-atencion .container-filters {
+    display: none;
+}
+
+#contenedor-mapa   #contenedor-puntos-atencion .container-filters.active {
+    display: block;
+}
+
+@media screen and (max-width:650px){
+
+#contenedor-mapa .container-close {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  display: flex;
+  gap: 12px;
+}
+
+  div#contenedor-mapa, div#contenedor-mapa.show-map {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  #contenedor-mapa.show-map div#contenedor-puntos-atencion, #contenedor-mapa div#contenedor-puntos-atencion {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }  
+
+  
+
+  #contenedor-mapa #contenedor-puntos-atencion .filter{
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    overflow: scroll;
+    display:none;
+  }
+
+  #contenedor-mapa .btn-filtro-movil, #contenedor-mapa .filter .submit-hu16-wrapper {
+    display:block;
+    position: fixed;
+    border: 1px solid #EEEEEE;
+    bottom: 0vh;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 12px;
+    z-index: 10;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #contenedor-mapa .btn-filtro-movil button {
+    font-size: 16px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    padding: 19px;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 29px;
+  }
+  #contenedor-mapa #contenedor-puntos-atencion .filter form input#hu16-submit-button {
+    /*border-radius: 6px;*/
+    height: 48px;
+    border-radius: 30px;
+    background-color: #fff;
+    color: var(--primary-color);
+    -webkit-appearance: none;
+  }
+  #contenedor-mapa   #contenedor-puntos-atencion .filter form input#hu16-submit-button:hover {
+
+    background-color: #0067B1;
+    color: #fff;
+    -webkit-appearance: none;
+  }
+  #contenedor-mapa #contenedor-puntos-atencion .filter form input.limpiar-mobile {
+      display: block;
+      font-size: 16px !important;
+    }
+  #contenedor-mapa   #contenedor-puntos-atencion .filter form input.limpiar {
+    margin-left: -6px;
+    margin-right: auto;
+    margin-top: 14px;
+    position: absolute;
+    display: none;
+    right: 24px;
+  }
+  #contenedor-mapa  #contenedor-puntos-atencion .filter form input.limpiar:focus {
+    outline: none !important;
+  }
+  #contenedor-mapa   .submit-hu16-wrapper:focus {
+    outline: none !important;
+  }
+  /* #contenedor-puntos-atencion .filter:after {
+  content: "";
+  background-image: url(https://f.hubspotusercontent00.net/hubfs/7212050/Sitio%20.COM/new-content/iconos/cerrar.svg);
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+}*/
+  #contenedor-mapa   .btn-filtro-movil.top-position {
+    position: initial;
+    border: none;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 0;
+  }
+  #contenedor-mapa   .btn-filtro-movil.top-position button {
+    font-size: 16px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    padding: 19px;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 29px;
+    height: 48px;
+    align-items: center;
+  }
+  
+  #contenedor-mapa   .btn-filtro-movil.top-position button img{
+  width: 20px;
+    height: 18px;
+  }
+  #contenedor-mapa   #contenedor-puntos-atencion .filter-container form {
+    padding-bottom: 85px;
+    position: relative;
+  }
+
+  #contenedor-mapa   #contenedor-puntos-atencion  .container-filter-select .filter-select {
+    margin-bottom: 18px;
+   }
+#contenedor-mapa   #contenedor-puntos-atencion  .container-filter-select .list-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-top: 13px;
+    }
+}
+  #contenedor-mapa   #contenedor-puntos-atencion  .container-filter-select .list-filters .tag {
+    align-items: center;
+    border: 1px solid #757575;
+    border-radius: 3px;
+    display: flex;
+    font-size: 14px;
+    height: 24px;
+    color: #757575;
+    line-height: 18px;
+    padding: 3px;
+  }
+
+}
